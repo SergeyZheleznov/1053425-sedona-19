@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Сергей Железнов](https://up.htmlacademy.ru/adaptive/19/user/1053425).
+* Студент: [Сергей Железнов] (https://up.htmlacademy.ru/adaptive/19/user/1053425)
 * Наставник: [Иван Жарков] (https://htmlacademy.ru/profile/id191422)
 
 ---
