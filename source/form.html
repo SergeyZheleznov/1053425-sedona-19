@@ -32,9 +32,9 @@
           </a>
         </div>
       </nav>
-    
+
     </header>
-    
+
     <main class="form-page">
 
       <h1 class="visually-hidden">Страница для отзыва</h1>
@@ -42,7 +42,7 @@
       <section class="head-page">
 
         <div class="head-title__position">
-          <img class="head-page__picture" src="img/back-mobile-jpg.jpg" width="320" height="159" alt="Вид на горы в городке Седона">
+          <img class="head-page__picture" src="https://via.placeholder.com/320x159" width="320" height="159" alt="Вид на горы в городке Седона">
         </div>
         <div>
           <b class="head-page__title">Оставьте свой отзыв</b>
@@ -52,9 +52,9 @@
       </section>
 
       <section class="form">
-        
+
         <form class="form" action="https://echo.htmlacademy.ru" method="GET">
-          
+
           <fieldset class="customer">
             <b class="customer__title">Представьтесь:</b>
             <div class="customer__name">
@@ -70,7 +70,7 @@
               <input type="text" name="customer-patronymic" id="customer-patronymic-id" value="Александрович">
             </div>             
           </fieldset>
-          
+
           <fieldset class="contacts">
             <b class="contacts__title">Контактная информация:</b>
             <div  class="contacts__tel">
@@ -84,52 +84,52 @@
               <input type="email" name="email" value="Введите e-mail" required>
             </div>
           </fieldset>
-          
-          <fieldset class="impression">
-            <b class="impression__title">Ваше общее впечатление:</b>
-            <div class="impression__plus">
-              <input type="radio" name="opinion" id="form-plus" checked>
-              <label for="form-plus">Скорее положительное</label>
+
+          <fieldset class="radio">
+            <b class="radio__title">Ваше общее впечатление:</b>
+            <div class="radio__one">
+              <input type="radio" name="opinion" id="form-one" checked>
+              <label for="form-one">Скорее положительное</label>
             </div>
-            <div class="impression__mines"></div>
-              <input type="radio" name="opinion" id="form-minus">
-              <label for="form-minus">Скорее отрицательное</label>
+            <div class="radio__two"></div>
+              <input type="radio" name="opinion" id="form-two">
+              <label for="form-two">Скорее отрицательное</label>
             </div>
-            <div>
-              <input type="radio" name="opinion" id="form-so-so">
-              <label for="form-so-so">Затрудняюсь ответить</label>
+            <div class="radio__three">
+              <input type="radio" name="opinion" id="form-three">
+              <label for="form-three">Затрудняюсь ответить</label>
             </div>
           </fieldset>
 
-          <fieldset class="photo-places">
-            <b class="photo-places__title">Посещенные<br>достопримечательности:</b>
-            <div class="places__bridge">
-              <input type="checkbox" name="bridge" id="form-bridge" checked>
-              <label for="form-bridge">Мост Дяьвола</label>
+          <fieldset class="checkbox">
+            <b class="chechbox__title">Посещенные<br>достопримечательности:</b>
+            <div class="checkbox__one">
+              <input type="checkbox" name="check-one" id="form-one" checked>
+              <label for="form-one">Мост Дяьвола</label>
             </div>
-            <div class="photo-places__mountain">
-              <input type="checkbox" name="mountain" id="form-mountain" checked>
-              <label for="form-mountain">Гора-Колокол</label>
+            <div class="checkbox__two">
+              <input type="checkbox" name="check-two" id="form-two" checked>
+              <label for="form-two">Гора-Колокол</label>
             </div>
-            <div class="photo-places__park">
-              <input type="checkbox" name="park" id="form-park" checked>
-              <label for="form-park">Слайд-парк</label>
+            <div class="checkbox__three">
+              <input type="checkbox" name="check-three" id="form-three" checked>
+              <label for="form-three">Слайд-парк</label>
             </div>
-            <div class="photo-places__rocks">
-              <input type="checkbox" name="rocks" id="form-rocks">
-              <label for="form-rocks">Красные скалы</label>
+            <div class="checkbox__four">
+              <input type="checkbox" name="chech-four" id="form-four">
+              <label for="form-four">Красные скалы</label>
             </div>
           </fieldset>
 
           <fieldset class="discription">
             <b class="discription__title">Опишите свои эмоции:</b>
-            <div class="disctiption__text">
+            <div class="discription__text">
               <textarea name="comment" id="comment-field" rows="5" cols="20">Опишите подробно все свои восторги</textarea>
             </div>
           </fieldset>
 
           <div class="send-toggle button">
-            <input type="submit" value="Отправить отзыв">
+            <button type="submit" value="Отправить отзыв">
           </div>
         </form>
 
@@ -160,7 +160,6 @@
       </div> 
 
     </footer>
-  
+
   </body>
 </html>
-
