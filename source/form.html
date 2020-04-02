@@ -38,18 +38,12 @@
 
       <h1 class="visually-hidden">Страница для отзыва</h1>
 
-      <section class="head-page">
-        <h2 class="visually-hidden">Вступительная часть страницы</h2>
-        
+      <section class="form">
         <div>
-          <h3 class="head-page__title">Оставьте свой отзыв</h3>
+          <img class="form__picture" src="img/back-mobile-jpg.jpg" width="320" height="158" alt="sedona">
+          <h2 class="head-page__title">Оставьте свой отзыв</h2>
           <p class="head-page__text">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а так же о<br>посещённых вами <br>достопримечательностях</p>
         </div>
-
-      </section>
-
-      <section class="form">
-        <h2 class="visually-hidden">Форма для отзыва клиента</h2>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
@@ -57,15 +51,15 @@
             <legend class="customer__title">Представьтесь:</legend>
             <div class="customer__name">
               <label for="customer-name-id">Имя<sup>*</sup></label>
-              <input type="text" name="customer-name" id="customer-name-id" value="Петр" required>
+              <input type="text" name="customer-name" id="customer-name-id" placeholder="Петр" required>
             </div>
             <div class="customer__surname">
               <label for="customer-surname-id">Фамилия<sup>*</sup></label>
-              <input type="text" name="customer-surname" id="customer-surname-id" value="Иванов" required>
+              <input type="text" name="customer-surname" id="customer-surname-id" placeholder="Иванов" required>
             </div>
             <div class="customer__patronymic">
               <label for="customer-patronymic-id">Отчество</label>
-              <input type="text" name="customer-patronymic" id="customer-patronymic-id" value="Александрович">
+              <input type="text" name="customer-patronymic" id="customer-patronymic-id" placeholder="Александрович">
             </div>             
           </fieldset>
 
@@ -103,7 +97,7 @@
             <legend class="checkbox__title">Посещенные<br>достопримечательности:</legend>
             <div class="checkbox__one">
               <input type="checkbox" name="check-one" id="one" checked>
-              <label for="one">Мост Дяьвола</label>
+              <label for="one">Мост Дьявола</label>
             </div>
             <div class="checkbox__two">
               <input type="checkbox" name="check-two" id="two" checked>
@@ -122,7 +116,9 @@
           <fieldset class="discription">
             <legend class="discription__title">Опишите свои эмоции:</legend>
             <div class="discription__text">
-              <textarea name="comment" id="comment-field" rows="5" cols="20">Опишите подробно все свои восторги</textarea>
+            <label>
+              <textarea name="comment" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
             </div>
           </fieldset>
 
@@ -139,7 +135,7 @@
     <footer class="footer">
 
       <div class="footer__social social">
-        <h3 class="footer__title">#visitsedona</h3>
+        <b class="footer__title">#visitsedona</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/sedona">Мы в Твиттере</a>
