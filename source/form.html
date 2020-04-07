@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -18,7 +19,8 @@
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Наши работы</a>
+              <a href="photo.html">Фото и видео
+              </a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Форма отзыва</a>
@@ -27,8 +29,8 @@
               <a href="#">HTML ACADEMY</a>
             </li>
           </ul>
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
           </a>
         </div>
       </nav>
@@ -39,15 +41,15 @@
 
       <h1 class="visually-hidden">Страница для отзыва</h1>
 
-      <section class="form-wrap">
+      <section class="form-section">
 
-        <div class="form-head-page">
-          <img class="form-head-page__picture" src="img/back-mobile-jpg.jpg" width="320" height="158" alt="sedona">
-          <h2 class="form-head-page__title">Оставьте свой отзыв</h2>
-          <p class="form-head-page__text">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а так же о<br>посещённых вами <br>достопримечательностях</p>
+        <div class="form-head">
+          <span class="form-head__position form-head__picture--sedona"><img class="form-head__picture" src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="sedona"></span>
+          <h2 class="form-head__title">Оставьте свой отзыв</h2>
+          <p class="form-head__text">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а так же о<br>посещённых вами <br>достопримечательностях</p>
         </div>
-
-        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        
+        <form class="form-content" action="https://echo.htmlacademy.ru" method="POST">
 
           <fieldset class="customer">
             <legend class="customer__title">Представьтесь:</legend>
@@ -118,8 +120,8 @@
           <fieldset class="discription">
             <legend class="discription__title">Опишите свои эмоции:</legend>
             <div class="discription__text">
-            <textarea name="comment" id="comment-field" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
-            <label class="visually-hidden" for="comment-field">Отзыв клиента о поездке</label>
+              <textarea name="comment" class="discription__text" id="comment-field" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
+              <label class="visually-hidden" for="comment-field">Отзыв клиента о поездке</label>
             </div>
           </fieldset>
 
@@ -139,19 +141,20 @@
         <b class="footer__title">#visitsedona</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/sedona">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/sedona"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/sedona">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/sedona"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/sedona">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/sedona"></a>
           </li>
         </ul>
       </div>
 
       <div class="footer__copyright copyright">
-        <b class="copyright__text"> Разработано:</b><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
 
     </footer>

@@ -1,0 +1,40 @@
+.site-list {
+  position: relative;
+}
+/*
+Данный код предназначе для вызова чёрного крестика,
+для того. чтобы вызвать этот чёрный крестик, нужно раскавычить зелёный код
+и закоментировать код ниже зелёного, тогда уберётся белый крестик.
+.site-list__item--active::before {
+  content:"";
+  position: absolute;
+  top: 17px;
+  left: 280px;
+  width: 23px;
+  height: 24px;
+  
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-cross.svg");
+}*/
+
+.site-list__item--active::after,
+.site-list__item--active::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 277px;
+
+  width: 30px;
+  height: 3px;
+
+  background-color: #ffffff;
+}
+
+.site-list__item--active::before {
+  transform: rotate(45deg);
+}
+
+.site-list__item--active::after {
+  transform: rotate(-45deg);
+}
+
