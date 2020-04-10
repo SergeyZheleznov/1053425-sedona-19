@@ -1,19 +1,20 @@
 .photos-item {
   position: relative;
   display: block;
-  width: 280px;
-  height: 376px;
-  padding: 20px;
-
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 414px;
+  padding-top: 23px;
+  padding-left: 20px;
   border-bottom: 0.5px solid rgba( 0, 0, 0, 0.3);
 }
 
 .photos-item__title {
-  display: inline-block;
-  width: 300px;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
   font-size: @little-font;
   font-weight: 700;
   line-height: 24px;
@@ -22,11 +23,9 @@
 }
 
 .photos-item__author {
-  display: inline-block;
-  margin-top: 2px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 6px;
+  display: block;
+  margin: 0;
+  padding: 0;
 
   font-size: @little-font;
   font-weight: 400;
@@ -35,7 +34,10 @@
 }
 
 .photos-item__likes {
-  margin-left: 20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 6px;
   width: 23px;
   height: 21px;
   border: none;
@@ -49,11 +51,10 @@
 
 .photos-item__numbers { 
   display: inline-block;
-  margin-top: 0px;
+  margin: 0;
+  padding: 0;
   margin-left: 8px;
-  padding-top: 0px;
-  padding-left: 30p;
-
+ 
   font-size: @little-font;
   font-weight: 700;
   line-height: 24px;
