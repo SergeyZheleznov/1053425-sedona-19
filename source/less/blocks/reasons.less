@@ -7,19 +7,20 @@
 .reasons__picture {
   height: 389px;
   margin: 0;
-  padding: 0;
+  padding-top: 2px;
 }
 
 .reasons__position--sedona::after {
   content:"";
   position: absolute;
-  top:90px;
+  top:92px;
   left: 20px;
   width: 281px;
   height: 214px;
  
+  background-size: 280px;
   background-repeat: no-repeat;
-  background-image: url("../img/text-sedona-index281x214.svg");
+  background-image: url("../img/text-sedona-index.svg");
 }
 
 .reasons__position--sedona::before {
@@ -37,8 +38,8 @@
 .reasons__number-zero {
   display: inline-block;
   padding-top: 20px;
-  padding-left: 20px;
-  font-size: 18px;
+  padding-left: 30px;
+  font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
   text-align:center;
@@ -49,10 +50,10 @@
 .reasons__number-one {
   display: inline-block;
   margin-top: 0px;
-  padding-top: 5px;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-left: 35px;
 
-  font-size: 14px;
+  font-size: @little-font;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;

@@ -12,26 +12,22 @@
     <header class="page-header">
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item site-list__item-top site-list__item--active">
               <a href="index.html">Главная</a>
+              <button class="site-list__button-top" type="button">Закрыть меню</button>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
+            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="site-list__item site-list__item--strips">
               <a href="#">HTML ACADEMY</a>
             </li>
+            <li class="site-list__item site-list__item-down">
+              <a href="index.html"><img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»"></a>
+              <button class="site-list__button-down" type="button">Открыть меню</button>
+            </li>
           </ul>
-          <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
-          </a>
         </div>
       </nav>
 
@@ -54,15 +50,15 @@
           <fieldset class="customer">
             <legend class="customer__title">Представьтесь:</legend>
             <div class="customer__name">
-              <label for="customer-name-id">Имя<sup>*</sup></label>
+              <label for="customer-name-id">Имя<sup>*</sup>:</label>
               <input type="text" name="customer-name" id="customer-name-id" placeholder="Петр" required>
             </div>
             <div class="customer__surname">
-              <label for="customer-surname-id">Фамилия<sup>*</sup></label>
+              <label for="customer-surname-id">Фамилия<sup>*</sup>:</label>
               <input type="text" name="customer-surname" id="customer-surname-id" placeholder="Иванов" required>
             </div>
             <div class="customer__patronymic">
-              <label for="customer-patronymic-id">Отчество</label>
+              <label for="customer-patronymic-id">Отчество:</label>
               <input type="text" name="customer-patronymic" id="customer-patronymic-id" placeholder="Александрович">
             </div>
           </fieldset>
@@ -70,12 +66,12 @@
           <fieldset class="contacts">
             <legend class="contacts__title">Контактная информация:</legend>
             <div  class="contacts__tel">
-              <label for="telephone">Контактный телефон:<sup>*</sup> </label>
+              <label for="telephone">Контактный телефон<sup>*</sup>:</label>
               <br>
               <input type="tel" name="tel" id="telephone" value="Введите телефон" required>
             </div>
             <div class="contacts__email">
-              <label for="e-mail">Электронная почта:<sup>*</sup></label>
+              <label for="e-mail">Электронная почта<sup>*</sup>:</label>
               <br>
               <input type="email" name="email" id="e-mail" value="Введите e-mail" required>
             </div>
@@ -141,13 +137,13 @@
         <b class="footer__title">#visitsedona</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/sedona"></a>
+           <a class="social__link social__link--twitter" href="https://twitter.com/sedona">Мы в Твиттере</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/sedona"></a>
+         <a class="social__link social__link--facebook" href="https://www.facebook.com/sedona">Мы в Фейсбуке</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/sedona"></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/sedona">Мы в Ютубе</a>
           </li>
         </ul>
       </div>

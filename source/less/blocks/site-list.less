@@ -1,40 +1,81 @@
 .site-list {
   position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
-/*
-Данный код предназначе для вызова чёрного крестика,
-для того. чтобы вызвать этот чёрный крестик, нужно раскавычить зелёный код
-и закоментировать код ниже зелёного, тогда уберётся белый крестик.
-.site-list__item--active::before {
-  content:"";
-  position: absolute;
-  top: 17px;
-  left: 280px;
-  width: 23px;
-  height: 24px;
-  
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-cross.svg");
-}*/
 
-.site-list__item--active::after,
-.site-list__item--active::before {
-  content: "";
-  position: absolute;
-  top: 26px;
-  left: 277px;
+.site-list__item {
+  z-index: 5;
 
-  width: 30px;
-  height: 3px;
+  width: 320px;
+  height: 55.5px;
+  margin: 0;
+  padding: 0;
 
+  line-height: 55px;
+  text-align: center;
+  font-size: 0;
+
+  background-color: @blue;
+  border: 1px solid rgba( 0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.site-list__item-top {
+  position: relative;
+  text-align: right;
+}
+
+.site-list__item a {
+  font-size: @medium-font;
+  text-transform: uppercase;
+  color:#ffffff;
+
+  text-decoration: none;
+  text-align: center;
+
+  text-transform: uppercase; 
+}
+
+.site-list__item-top a {
+  margin-right: 123px;
+}
+
+.site-list__item-down {
+  position: relative;
   background-color: #ffffff;
 }
 
-.site-list__item--active::before {
-  transform: rotate(45deg);
+.site-list__button-top {
+  position: absolute;
+  top: 16px;
+  left: 277px;
+
+  width: 23px;
+  height: 22px;
+  border: none;
+
+  background-color: @blue;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-cross.svg);
+
+  cursor: pointer;
 }
 
-.site-list__item--active::after {
-  transform: rotate(-45deg);
-}
+.site-list__button-down {
+  position: absolute;
+  top: 16px;
+  left: 277px;
 
+  width: 23px;
+  height: 22px;
+  border: none;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-menu.svg);
+
+  cursor: pointer;
+}

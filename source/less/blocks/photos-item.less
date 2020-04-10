@@ -14,7 +14,7 @@
   padding-top: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  font-size: 14px;
+  font-size: @little-font;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
@@ -28,35 +28,36 @@
   padding-top: 0px;
   padding-bottom: 6px;
 
-  font-size: 14px;
+  font-size: @little-font;
   font-weight: 400;
   line-height: 24px;
   color:#333333;
 }
 
 .photos-item__likes {
+  margin-left: 20px;
+  width: 23px;
+  height: 21px;
+  border: none;
+ 
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-like.svg"); 
+
+  cursor: pointer;
+}
+
+.photos-item__numbers { 
   display: inline-block;
   margin-top: 0px;
   margin-left: 8px;
   padding-top: 0px;
   padding-left: 30p;
 
-  font-size: 14px;
+  font-size: @little-font;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
   color:#000000;
 }
 
-.photos-item__likes--trump::before {
-    content:"";
-    position: absolute;
-    top: 370px;
-    left: 20px;
-    width: 23px;
-    height: 21px;
-
-    opacity: 0.4;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-like.svg");
-}

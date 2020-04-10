@@ -5,13 +5,14 @@
 .form-head__picture--sedona::before {
   content:"";
   position: absolute;
-  top: 46px;
+  top: 52px;
   left: 46px;
   width: 229px;
   height: 39px;
    
+  background-size: 229px;
   background-repeat: no-repeat;
-  background-image: url("../img/text-sedona250x44.svg");
+  background-image: url("../img/text-sedona.svg");
 }
 
 .form-head__picture--sedona::after {
@@ -21,14 +22,14 @@
   left: 0px;
   width: 322px;
   height: 26px;
-   
-  z-index:5;
+  
+  background-size: 322px;
   background-repeat: no-repeat;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
 }
 
 .form-head__title {
-  font-size: 18px;
+  font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
   text-align:center;
@@ -37,7 +38,7 @@
 }
 
 .form-head__text {
-  font-size: 14px;
+  font-size: @little-font;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
