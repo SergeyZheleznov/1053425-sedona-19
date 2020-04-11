@@ -1,28 +1,26 @@
 .photos-head {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.photos-head__picture--sedona::before {
-  content:"";
-  position: absolute;
-  top: 53px;
-  left: 46px;
-  width: 230px;
-  height: 44px;
-
-  background-size: 230px;
+.photos-head__picture {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 158px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/text-sedona.svg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
-.photos-head__picture--sedona::after {
+.photos-head--sedona::after {
   content:"";
   position: absolute;
   top: 132px;
   left: 0px;
   width: 322px;
   height: 26px;
-
   background-repeat: no-repeat;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
 }
@@ -31,7 +29,6 @@
   display: block;
   padding: 20px;
   padding-bottom: 9px;
-
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;

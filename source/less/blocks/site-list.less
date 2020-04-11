@@ -1,9 +1,8 @@
 .site-list {
   position: relative;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  .list-reset();
 }
 
 .site-list__item {
@@ -36,7 +35,7 @@
   text-decoration: none;
   text-align: center;
 
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .site-list__item-top a {
@@ -46,36 +45,4 @@
 .site-list__item-down {
   position: relative;
   background-color: #ffffff;
-}
-
-.site-list__button-top {
-  position: absolute;
-  top: 16px;
-  left: 277px;
-
-  width: 23px;
-  height: 22px;
-  border: none;
-
-  background-color: @blue;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-cross.svg);
-
-  cursor: pointer;
-}
-
-.site-list__button-down {
-  position: absolute;
-  top: 16px;
-  left: 277px;
-
-  width: 23px;
-  height: 22px;
-  border: none;
-
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-menu.svg);
-
-  cursor: pointer;
 }
