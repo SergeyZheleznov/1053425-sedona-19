@@ -1,0 +1,63 @@
+.realtown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.realtown__position {
+  margin: 0;
+  padding: 0;
+}
+
+.realtown__wrap {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-height: 220px;
+  text-align: center;
+  color: #ffffff;
+  background-color: @blue;
+}
+
+.realtown::before {
+  content:"";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 320px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-triangle.svg");
+}
+
+.realtown__title {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-top: 49px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.realtown__number {
+  display: block;
+  margin-top: 0px;
+  padding-top: 10px;
+  font-size: @little-font;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.realtown__recomendation {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  font-size: @little-font;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}

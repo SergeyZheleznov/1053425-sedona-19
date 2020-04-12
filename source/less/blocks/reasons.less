@@ -1,0 +1,51 @@
+.reasons {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons__index {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 389px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.reasons--sedona::before {
+  content:"";
+  position: absolute;
+  top: 363px;
+  left: 0px;
+  width: 321px;
+  height: 50px;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+.reasons__number-zero {
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: @medium-font;
+  font-weight: 700;
+  line-height: 26px;
+  text-align:center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reasons__number-one {
+  display: inline-block;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-left: 35px;
+  font-size: @little-font;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}

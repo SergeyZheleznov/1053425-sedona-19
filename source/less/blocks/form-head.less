@@ -1,0 +1,44 @@
+.form-head {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.form-head__picture {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 158px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.form-head--sedona::after {
+  content:"";
+  position: absolute;
+  top: 132px;
+  left: 0px;
+  width: 322px;
+  height: 26px;
+  background-size: 322px;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+.form-head__title {
+  font-size: @medium-font;
+  font-weight: 700;
+  line-height: 26px;
+  text-align:center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-head__text {
+  font-size: @little-font;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}

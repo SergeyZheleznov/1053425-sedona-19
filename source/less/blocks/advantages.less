@@ -1,0 +1,65 @@
+.advantages {
+  position: relative;
+  .list-reset();
+  margin-left: 20px;
+  padding-top: 32px;
+}
+
+.advantages__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  width: 260px;
+  text-align: left;
+}
+
+.advantages__title {
+  font-size: @medium-font;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages__item--home::after {
+  content:"";
+  position: absolute;
+  top: 22px;
+  left: 3px;
+  width: 37px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-house37x36.svg");
+}
+
+.advantages__item--souvenires::after {
+  content:"";
+  position: absolute;
+  top: 151px;
+  left: 6px;
+  width: 32px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-gift32x38.svg");
+}
+
+.advantages__item--meal::after {
+  content:"";
+  position: absolute;
+  top: 268px;
+  left: 0px;
+  width: 40px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-burger40x35.svg");
+}
+
+.advantages__description {
+  font-size: @little-font;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
