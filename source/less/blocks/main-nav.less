@@ -6,27 +6,28 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;;
-  padding: 0;
-  width: 320px;
   margin: 0;
   padding: 0;
+  width: 320px;
 }
 
-.main-nav__logo-image{
+.main-nav__logo-image {
   z-index: 5;
-  margin:auto;
+  margin: auto;
 }
 
 .main-nav__button {
   position: absolute;
-  width: 22px;
+  width: 23px;
   height: 23px;
   z-index: 10;
   left: 277px;
   top: 17px;
   background-color: @blue;
+
   border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../img/icon-cross.svg");
   cursor: pointer;
 }
