@@ -61,3 +61,40 @@
   line-height: 21px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .realtown__position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .realtown__wrap {
+    width: 256px;
+    height: 256px;
+  }
+
+  .realtown::before {
+    display: none;
+  }
+
+  .realtown__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .realtown__picture {
+    width: 510px;
+    height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .realtown__wrap {
+    width: 400px;
+  }
+
+  .realtown__picture {
+    width: 798px;
+  }
+}

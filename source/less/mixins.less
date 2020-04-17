@@ -3,3 +3,12 @@
   padding: 0;
   list-style: none;
 }
+
+.no-ouline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

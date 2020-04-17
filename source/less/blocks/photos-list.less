@@ -1,3 +1,18 @@
 .photos-list {
   .list-reset();
 }
+
+@media (min-width: @tablet-width) {
+  .photos-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-list {
+    width: 1200px;
+  }
+}

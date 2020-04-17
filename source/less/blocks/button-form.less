@@ -1,4 +1,4 @@
-.button {
+.button-form {
   display: block;
   margin: auto;
   width: 280px;
@@ -15,15 +15,17 @@
 }
 
 @media (min-width: @tablet-width) {
-  .button {
-    width: 458px;
-    height: 58px;
-    font-size: @large-font;
-  }
-
   .button__form {
     width: 324px;
     height: 58px;
-    margin-bottom: 50px;
+    font-size: @large-font;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button__form {
+    width: 480px;
+    height: 58px;
+    font-size: @large-font;
   }
 }
