@@ -9,15 +9,49 @@ html {
 }
 
 body {
-  min-width: 321px;
-  margin: 0;
-  padding: 0;
+  min-width: 320px;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+  background-color: #f2f2f2;
+}
+
+.dimention {
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 1, 1, 0.2);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .body {
+    min-width: 768px;
+    background-color: #f2f2f2;
+  }
+
+  .dimention {
+    width: 768px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 1, 1, 0.2);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .body {
+    min-width: 1280px;
+    background-color: #f2f2f2;
+  }
+
+  .dimention {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 1, 1, 0.2);
+  }
 }

@@ -56,13 +56,14 @@ footer {
 
 @media (min-width: @desktop-width) {
   .footer {
+    display: flex;
     width: 1200px;
-    margin: 0 40px;
-    background-color: #ffffff;
-    box-shadow: 0 0 5px rgba(0, 1, 1, 0.2);
   }
 
   .footer__social {
-    width: 800px;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    justify-content: space-between;
   }
 }
