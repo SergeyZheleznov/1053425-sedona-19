@@ -7,7 +7,7 @@
   height: 414px;
   padding-top: 23px;
   padding-left: 20px;
-  border-bottom: 0.5px solid rgba( 0, 0, 0, 0.3);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .photos-item__title {
@@ -19,7 +19,7 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
 }
 
 .photos-item__author {
@@ -30,7 +30,7 @@
   font-size: @little-font;
   font-weight: 400;
   line-height: 24px;
-  color:#333333;
+  color: #333333;
 }
 
 .photos-item__likes {
@@ -56,5 +56,115 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .photos-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 324px;
+    height: 347px;
+    background-color: #ffffff;
+  }
+
+  .photos-item__picture {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photos-item__text-wrap1 {
+    width: 180px;
+    height: 37px;
+    margin-left: 20px;
+  }
+
+  .photos-item__sunset {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 648px;
+    height: 480px;
+    background-color: #ffffff;
+  }
+
+  .photos-item__picture-sunset {
+    width: 647px;
+    height: 400px;
+  }
+
+  .photos-item__text-wrap {
+    width: 145px;
+    height: 37px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-list {
+    width: 1200px;
+  }
+
+  .photos-item {
+    position: relative;
+    width: 399px;
+    height: 267px;
+  }
+
+  .photos-item__sunset {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photos-item__picture-sunset {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photos-item__title {
+    color: #ffffff;
+  }
+
+  .photos-item__author {
+    color: #ffffff;
+  }
+
+  .photos-item__text-wrap {
+    position: absolute;
+    top: 330px;
+    left: 10px;
+  }
+
+  .photos-item__positionlikes {
+    position: absolute;
+    top: 360px;
+    left: 1100px;
+  }
+
+  .photos-item__numbers {
+    color: #ffffff;
+  }
+
+  .photos-item__picture {
+    width: 400px;
+  }
+
+  .photos-item__text-wrap1 {
+    position: absolute;
+    top: 200px;
+    left: 1px;
+  }
+
+  .photos-item__positionlikes1 {
+    position: absolute;
+    top: 230px;
+    left: 330px;
+  }
 }

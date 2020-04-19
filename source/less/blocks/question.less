@@ -6,7 +6,7 @@
   padding-top: 23px;
 }
 
-.question__text{
+.question__text {
   display: block;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@
   font-size: @large-font;
   font-weight: 700;
   line-height: 24px;
-  text-align:center;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -35,4 +35,28 @@
   display: block;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .question {
+    width: 768px;
+    height: 318px;
+  }
+
+  .question__text {
+    font-size: 30px;
+  }
+
+  .button {
+    width: 458px;
+    height: 58px;
+    font-size: @large-font;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question {
+    width: 1200px;
+    height: 331px;
+  }
 }

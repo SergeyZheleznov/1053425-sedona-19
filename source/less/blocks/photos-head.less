@@ -1,10 +1,11 @@
 .photos-head {
   position: relative;
+  width: 320px;
   margin: 0;
   padding: 0;
 }
 
-.photos-head__picture {
+.photos-head__position {
   margin: 0;
   padding: 0;
   width: 320px;
@@ -14,11 +15,19 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
+.photos-head__picture {
+  position: absolute;
+  top: 40px;
+  left: 46px;
+  width: 230px;
+  height: 40px;
+}
+
 .photos-head--sedona::after {
-  content:"";
+  content: "";
   position: absolute;
   top: 132px;
-  left: 0px;
+  left: 0.1px;
   width: 322px;
   height: 26px;
   background-repeat: no-repeat;
@@ -32,7 +41,7 @@
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
-  text-align:center;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -43,4 +52,82 @@
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .photos-head {
+    width: 768px;
+  }
+
+  .photos-head__position {
+    position: relative;
+    width: 768px;
+    height: 290px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .photos-head__picture {
+    position: absolute;
+    top: 50px;
+    left: 154px;
+    width: 460px;
+    height: 80px;
+  }
+
+  .photos-head--sedona::after {
+    content: "";
+    position: absolute;
+    top: 234px;
+    left: 1px;
+    width: 768px;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .photos-head__title {
+    font-size: 30px;
+  }
+
+  .photos-head__text br {
+    display: none;
+    width: 428px;
+  }
+
+  .photos-head__text {
+    width: 428px;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-head {
+    width: 1200px;
+  }
+
+  .photos-head__position {
+    position: relative;
+    width: 1200px;
+    height: 290px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .photos-head__picture {
+    position: absolute;
+    top: 100px;
+    left: 370px;
+    width: 460px;
+    height: 80px;
+  }
+
+  .photos-head--sedona::after {
+    content: "";
+    position: absolute;
+    top: 234px;
+    left: 1px;
+    width: 1200px;
+    height: 57px;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
 }

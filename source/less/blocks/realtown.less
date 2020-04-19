@@ -21,10 +21,10 @@
 }
 
 .realtown::before {
-  content:"";
+  content: "";
   position: absolute;
   top: -10px;
-  left: 0px;
+  left: 1px;
   width: 320px;
   height: 40px;
   background-repeat: no-repeat;
@@ -33,9 +33,9 @@
 
 .realtown__title {
   display: inline-block;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
   padding-top: 49px;
-  padding-bottom: 0px;
+  padding-bottom: 1px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -44,7 +44,7 @@
 
 .realtown__number {
   display: block;
-  margin-top: 0px;
+  margin-top: 1px;
   padding-top: 10px;
   font-size: @little-font;
   font-weight: 400;
@@ -60,4 +60,41 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .realtown__position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .realtown__wrap {
+    width: 256px;
+    height: 256px;
+  }
+
+  .realtown::before {
+    display: none;
+  }
+
+  .realtown__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .realtown__picture {
+    width: 510px;
+    height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .realtown__wrap {
+    width: 400px;
+  }
+
+  .realtown__picture {
+    width: 798px;
+  }
 }
