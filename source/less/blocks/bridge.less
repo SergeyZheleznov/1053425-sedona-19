@@ -76,7 +76,7 @@
 
   .bridge__wrap {
     display: block;
-    width: 255px;
+    min-width: 255px;
     height: 256px;
     padding-top: 46px;
     padding-left: 50px;
@@ -108,19 +108,57 @@
 @media (min-width: @desktop-width) {
   .bridge {
     width: 1200px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bridge__wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 400px;
+    margin: 0;
+    padding: 52px 80px 0px;
+    outline: 1px solid #d61e1e;
+  }
+
+  .bridge__title {
+    display: block;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    outline: 1px solid #d61e1e;
+  }
+
+  .bridge__number {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+    outline: 1px solid #d61e1e;
+  }
+
+  .bridge__recomendation {
+    display: block;
+    width: 233px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid #d61e1e;
+  }
+
+  .bridge__recomendation br {
+    display: none;
   }
 
   .bridge__picture {
     width: 798px;
+    outline: 1px solid #d61e1e;
   }
 
   .bridge__picture1 {
     width: 798px;
     height: 256px;
-  }
-
-  .bridge__wrap {
-    padding: 50px 20px;
-    width: 400px;
   }
 }
