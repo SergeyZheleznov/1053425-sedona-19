@@ -14,7 +14,6 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 66px;
   min-height: 220px;
   text-align: center;
   color: #ffffff;
@@ -34,9 +33,10 @@
 
 .realtown__title {
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  font-size: @medium-font;
+  margin-bottom: 1px;
+  padding-top: 49px;
+  padding-bottom: 1px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
@@ -44,9 +44,8 @@
 
 .realtown__number {
   display: block;
-  margin: 0;
-  padding: 0;
-  margin-top: 9px;
+  margin-top: 1px;
+  padding-top: 10px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 20px;
@@ -57,7 +56,6 @@
   padding: 0;
   margin: 0;
   padding-top: 15px;
-  margin-right: 10px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 21px;
@@ -72,8 +70,6 @@
   }
 
   .realtown__wrap {
-    margin: 0;
-    padding: 45px;
     width: 256px;
     height: 256px;
   }
@@ -85,16 +81,6 @@
   .realtown__title {
     margin: 0;
     padding: 0;
-    font-size: @large-font;
-  }
-
-  .realtown__recomendation br {
-    display: none;
-  }
-
-  .realtown__recomendation {
-    margin: 0;
-    padding-top: 22px;
   }
 
   .realtown__picture {
@@ -105,31 +91,10 @@
 
 @media (min-width: @desktop-width) {
   .realtown__wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 400px;
-    padding: 51px;
-  }
-
-  .realtown__title {
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    font-size: @large-font;
-  }
-
-  .realtown__number {
-    margin-bottom: 21px;
-  }
-
-  .realtown__recomendation {
-    width: 280px;
-    margin: 0;
-    padding: 0;
   }
 
   .realtown__picture {
-    width: 799.5px;
+    width: 798px;
   }
 }
