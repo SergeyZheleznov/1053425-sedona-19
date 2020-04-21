@@ -9,7 +9,7 @@
 .copyright__text {
   margin: 0;
   padding: 0;
-  margin-left: 97px;
+  margin-left: 95px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 26px;
@@ -20,10 +20,23 @@
 .copyright__link--htmlacademy::before {
   content: "";
   position: absolute;
-  top: 36px;
-  left: 199px;
+  top: 40px;
+  left: 197px;
   width: 27px;
   height: 34px;
   background-repeat: no-repeat;
   background-image: url("../img/logo-htmlacademy.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-left: 115px;
+  }
+
+  .copyright__link--htmlacademy::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 217px;
+ }
 }

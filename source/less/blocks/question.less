@@ -40,16 +40,37 @@
 @media (min-width: @tablet-width) {
   .question {
     width: 768px;
-    height: 318px;
+    min-height: 318px;
+    margin: 0;
+    padding: 0;
+    padding-top: 57px;
   }
 
   .question__text {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 31px;
+
     font-size: 30px;
+  }
+
+  .question__content {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 39px;
+    width: 400px;
+  }
+
+  .question__content br {
+    display: none;
   }
 
   .button {
     width: 458px;
     height: 58px;
+    margin: 0;
     font-size: @large-font;
   }
 }
