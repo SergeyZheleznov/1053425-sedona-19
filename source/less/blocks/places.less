@@ -67,30 +67,50 @@
     align-items: center;
     margin: 0;
     padding: 47px 60px;
-    width: 255.9px;
+    width: 255.6px;
     height: 256px;
+    border: none;
   }
 
   .places__title {
-    width: 130px;
+    margin: 0;
+    padding: 0;
     font-size: @large-font;
   }
 
   .places__number {
     margin: 0;
     padding: 0;
-    margin-bottom: 23px;
+    margin-top: 10px;
+    margin-bottom: 21px;
   }
 
   .places__recomendation {
     margin: 0;
     padding: 0;
+    width: 160px;
+  }
+
+  .places__recomendation-square br {
+    display: none;
+  }
+
+  .places__shortrecomendation {
+    width: 150px;
+  }
+
+  .places__tourists-recomendation br {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .places {
     width: 399.9px;
+  }
+
+  .places__title {
+    width: 150px;
   }
 
   .places__number {

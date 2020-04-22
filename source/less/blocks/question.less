@@ -39,6 +39,12 @@
 
 @media (min-width: @tablet-width) {
   .question {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
     width: 768px;
     min-height: 318px;
     margin: 0;
@@ -50,16 +56,15 @@
     display: block;
     margin: 0;
     padding: 0;
-    margin-bottom: 31px;
-
     font-size: 30px;
   }
 
   .question__content {
     display: block;
     width: 400px;
+    margin: 0;
     padding: 0;
-    margin: 39px;
+    padding-top: 30px;
   }
 
   .question__content br {
@@ -71,6 +76,11 @@
     height: 58px;
     margin: 0;
     font-size: @large-font;
+  }
+
+  .question__search {
+    margin: 0;
+    padding: 0;
   }
 }
 
