@@ -4,6 +4,7 @@
   padding: 0;
   padding-top: 23px;
   width: 320px;
+  min-height: 168px;
   text-align: center;
 
   background-color: @blue;
@@ -34,11 +35,28 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-bottom: 32px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.places__recomendation-square {
+  width: 250px;
+  margin: 18px auto 22px;
+}
+
+.places__recomendation-square br {
+  display: none;
+}
+
+.places__tourists-recomendation {
+  width: 250px;
+  margin: 18px auto 22px;
+}
+
+.places__tourists-recomendation br {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,7 +67,7 @@
     align-items: center;
     margin: 0;
     padding: 47px 60px;
-    width: 255px;
+    width: 255.9px;
     height: 256px;
   }
 
@@ -83,7 +101,6 @@
     width: 300px;
     margin: 0;
     padding: 0;
-    outline: 1px solid #dd1c1c;
   }
 
   .places__recomendation br {
