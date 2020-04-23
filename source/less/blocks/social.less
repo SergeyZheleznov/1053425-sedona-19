@@ -1,22 +1,18 @@
 .social__list {
   display: flex;
-  .list-reset();
-
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 3px;
+  .list-reset();
 }
 
 .social__item {
   position: relative;
   display: block;
-
   width: 46px;
   height: 48px;
-  margin-right: 6px;
-
+  margin-right: 3px;
+  margin-left: 3px;
   background-color: @blue;
 }
 
@@ -56,6 +52,7 @@
 @media (min-width: @tablet-width) {
   .social__list {
     margin: 0;
+    margin-right: 22px;
     padding: 0;
   }
 }
@@ -63,6 +60,8 @@
 @media (min-width: @desktop-width) {
   .social__list {
     margin: 0;
+    margin-right: 121px;
+    margin-bottom: 32px;
     padding: 0;
   }
 }
