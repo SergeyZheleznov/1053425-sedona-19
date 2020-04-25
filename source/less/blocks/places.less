@@ -1,12 +1,30 @@
 .places {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  width: 320px;
   margin: 0;
   padding: 0;
-  padding-top: 23px;
-  width: 320px;
   text-align: center;
+  color: #000000;
+  background-color: #f2f2f2;
+}
 
-  background-color: @blue;
+.places__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  width: 280px;
+  margin: 0;
+  padding: 26px 12px 29px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(66, 64, 64, 0.2);
 }
 
 .places__title {
@@ -28,13 +46,22 @@
   font-size: @little-font;
   font-weight: 400;
   line-height: 21px;
+  color: #333333;
 }
 
 .places__recomendation {
   display: block;
   margin: 0;
   padding: 0;
-  padding-bottom: 32px;
+  font-size: @little-font;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.places__shortrecomendation {
+  margin: 0;
+  padding: 0;
   font-size: @little-font;
   font-weight: 400;
   line-height: 21px;
@@ -43,19 +70,113 @@
 
 @media (min-width: @tablet-width) {
   .places {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    padding: 50px 10px;
-    width: 255px;
+    padding: 46px 48px 39px;
+    width: 255.3px;
     height: 256px;
+    border: none;
+  }
+
+  .places__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 159px;
+    min-width: 157px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: none;
   }
 
   .places__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
     font-size: @large-font;
+  }
+
+  .places__number {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 21px;
+  }
+
+  .places__recomendation {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .places__shortrecomendation {
+    width: 134px;
+    margin: 0;
+    padding: 0;
+    font-size: @little-font;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: @desktop-width) {
   .places {
-    width: 399px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 399.9px;
+    padding-left: 43px;
+    padding-top: 44px;
+  }
+
+  .places__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 310px;
+    min-width: 150px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .places__title {
+    width: 150px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .places__number {
+    margin-bottom: 21px;
+  }
+
+  .places__recomendation {
+    width: 310px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .places__recomendation br {
+    display: none;
+  }
+
+  .places__shortrecomendation {
+    width: 262px;
   }
 }

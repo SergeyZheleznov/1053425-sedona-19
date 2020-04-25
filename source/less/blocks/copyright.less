@@ -1,15 +1,22 @@
 .copyright {
   position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
   width: 320px;
+  margin: 0;
+  padding: 43px 20px 0;
+  text-align: center;
 }
 
 .copyright__text {
+  display: block;
+  width: 140px;
   margin: 0;
   padding: 0;
-  margin-left: 97px;
+  padding-right: 43px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 26px;
@@ -20,10 +27,39 @@
 .copyright__link--htmlacademy::before {
   content: "";
   position: absolute;
-  top: 36px;
-  left: 199px;
+  top: 40px;
+  left: 197px;
   width: 27px;
   height: 34px;
   background-repeat: no-repeat;
   background-image: url("../img/logo-htmlacademy.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-right: 50px;
+  }
+
+  .copyright__link--htmlacademy::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 137px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 8px;
+    padding: 0;
+  }
+
+  .copyright__link--htmlacademy::before {
+    content: "";
+    position: absolute;
+    top: 41px;
+    left: 252px;
+  }
 }

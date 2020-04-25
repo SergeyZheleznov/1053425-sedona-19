@@ -1,30 +1,57 @@
 .bridge {
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
   margin: 0;
-  padding: 0;
-  margin-top: 8px;
   padding-top: 40px;
   width: 320px;
   color: #ffffff;
-  text-align: center;
   background-color: @blue;
+}
+
+.bridge__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .bridge__title {
   display: block;
   margin: 0;
   padding: 0;
+  padding-bottom: 8px;
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
 }
 
+.bridge__text1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.bridge__text2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
 .bridge__number {
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-bottom: 16px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 21px;
@@ -32,16 +59,33 @@
 
 .bridge__recomendation {
   display: block;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
   font-size: @little-font;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
 }
 
+.bridge__recomendation br {
+  display: none;
+}
+
+.bridge__picture {
+  width: 320px;
+  height: 260px;
+  margin: 0;
+  padding: 0;
+}
+
+.bridge__picture1 {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
   .bridge {
-    display: flex;
     margin: 0;
     padding: 0;
     width: 768px;
@@ -54,20 +98,91 @@
     height: 256px;
   }
 
-  .bridge__wrap {
-    width: 255px;
+  .bridge__picture1 {
+    width: 512px;
     height: 256px;
-    padding: 40px auto;
   }
 
-  .bridge__recomendation br {
-    display: none;
+  .bridge__wrap {
+    width: 255.9px;
+    height: 256px;
+    padding: 45px 30px 10px;
+  }
+
+  .bridge__title {
+    display: block;
+    width: 150px;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    font-size: @large-font;
+  }
+
+  .text1 {
+    display: block;
+    margin: 0;
+  }
+
+  .text2 {
+    display: block;
+    margin: 0;
+  }
+
+  .bridge__number {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+  }
+
+  .bridge__recomendation {
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .bridge {
     width: 1200px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bridge__wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 400px;
+    margin: 0;
+    padding: 52px 80px 0;
+  }
+
+  .bridge__title {
+    display: block;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .bridge__number {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+  }
+
+  .bridge__recomendation {
+    display: block;
+    width: 233px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bridge__recomendation br {
+    display: none;
   }
 
   .bridge__picture {
@@ -77,10 +192,5 @@
   .bridge__picture1 {
     width: 798px;
     height: 256px;
-  }
-
-  .bridge__wrap {
-    padding: 50px 20px;
-    width: 400px;
   }
 }
