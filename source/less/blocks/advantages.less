@@ -1,42 +1,27 @@
 .advantages {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
   .list-reset();
-  margin-left: 20px;
-  padding-top: 32px;
-  padding-bottom: 12px;
+  padding-top: 35px;
+  padding-left: 70px;
+  padding-bottom: 10px;
 }
 
 .advantages__home {
   display: block;
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
-  padding-bottom: 15px;
-  padding-left: 50px;
-  width: 260px;
-  text-align: left;
-}
-
-.advantages__souvenires {
-  display: block;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 15px;
-  padding-left: 50px;
-  width: 260px;
-  text-align: left;
-}
-
-.advantages__meal {
-  display: block;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 15px;
-  padding-left: 50px;
-  width: 260px;
+  width: 210px;
   text-align: left;
 }
 
 .advantages__title {
+  display: block;
+  margin-bottom: 13px;
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
@@ -44,11 +29,77 @@
   color: #000000;
 }
 
+.advantages__description {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: @little-font;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.advantages__souvenires {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 210px;
+  text-align: left;
+}
+
+.advantages__description1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: @little-font;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.advantages__description1-text1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__description1-text2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__description1-text3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__description1-text4 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__meal {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 210px;
+  text-align: left;
+}
+
 .advantages__home--home::after {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 2px;
+  top: 24px;
+  left: 23px;
   width: 35px;
   height: 36px;
   background-repeat: no-repeat;
@@ -58,8 +109,8 @@
 .advantages__souvenires--souvenires::after {
   content: "";
   position: absolute;
-  top: 151px;
-  left: 5px;
+  top: 154px;
+  left: 25px;
   width: 32px;
   height: 38px;
   background-repeat: no-repeat;
@@ -69,20 +120,12 @@
 .advantages__meal--meal::after {
   content: "";
   position: absolute;
-  top: 268px;
-  left: -2px;
+  top: 270px;
+  left: 19px;
   width: 40px;
   height: 35px;
   background-repeat: no-repeat;
   background-image: url("../img/icon-burger40x35.svg");
-}
-
-.advantages__description {
-  font-size: @little-font;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #333333;
 }
 
 @media (min-width: @tablet-width) {
@@ -90,39 +133,39 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 756px;
+    justify-content: space-between;
+    width: 768px;
     min-height: 310px;
     margin: 0;
-    padding-top: 158px;
-    padding-bottom: 0.2px;
+    padding: 158px 47px 71px;
   }
 
   .advantages__home {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 156px;
     height: 100px;
-    margin-right: 30px;
-    margin-left: 13px;
-    margin-bottom: 71px;
+    margin: 0;
+    margin-left: 3px;
+    padding: 0;
   }
 
   .advantages__souvenires {
-    margin: 0;
-    margin-left: 20px;
-    padding: 0;
-    width: 163px;
-    height: 101px;
     order: 3;
+    width: 163px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
   }
 
   .advantages__meal {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 20px;
     width: 150px;
     height: 100px;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
   }
 
   .advantages__meal br {
@@ -132,6 +175,7 @@
   .advantages__title {
     display: block;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     font-size: @large-font;
     text-align: center;
@@ -139,21 +183,35 @@
 
   .advantages__description {
     display: inline-block;
+    margin: 0;
+    padding: 0;
     font-size: @little-font;
     text-align: center;
-
-    margin-top: 20px;
   }
 
   .advantages__description br {
     display: none;
   }
 
+  .advantages__description1-text2 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 28px;
+    padding: 0;
+  }
+
+  .advantages__description1-text4 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 27px;
+    padding: 0;
+  }
+
   .advantages__home--home::after {
     content: "";
     position: absolute;
-    top: 57px;
-    left: 90px;
+    top: 59px;
+    left: 91px;
     width: 75px;
     height: 72px;
     background-repeat: no-repeat;
@@ -164,7 +222,7 @@
     content: "";
     position: absolute;
     top: 57px;
-    left: 607px;
+    left: 608px;
     width: 77px;
     height: 75px;
     background-repeat: no-repeat;
@@ -174,8 +232,8 @@
   .advantages__meal--meal::after {
     content: "";
     position: absolute;
-    top: 60px;
-    left: 345px;
+    top: 61px;
+    left: 347px;
     width: 77px;
     height: 75px;
     padding-bottom: 10px;
@@ -188,7 +246,42 @@
   .advantages {
     width: 1200px;
     height: 330px;
-    padding-right: 20px;
+    padding-top: 158px;
+    padding-left: 73px;
+    padding-right: 93px;
+    padding-bottom: 86px;
+  }
+
+  .advantages__souvenires {
+    width: 215px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__description1-text1 {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__description1-text2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__description1-text3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages__description1-text4 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 
   .advantages__home--home::after {
@@ -217,7 +310,7 @@
     content: "";
     position: absolute;
     top: 62px;
-    left: 561px;
+    left: 563px;
     width: 77px;
     height: 75px;
     background-repeat: no-repeat;
@@ -231,18 +324,10 @@
   }
 
   .advantages__meal {
-    display: block;
-    width: 315px;
+    width: 285px;
     margin: 0;
+    margin-right: 12px;
     padding: 0;
-    padding-right: 15px;
-  }
-
-  .advantages__souvenires {
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    padding-right: 10px;
   }
 
   .advantages__souvenires br {
