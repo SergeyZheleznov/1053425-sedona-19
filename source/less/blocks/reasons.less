@@ -21,14 +21,13 @@
   background-repeat: no-repeat;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 
-    @media (min-resolution: @retina-dri), (min-resolution: @retina-dppx)
-      {
-      background-image: url("img/bg-back-mobile@2x.jpg");
-      background-size: 640px auto;
-    }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
   }
+}
 
-  .reasons--sedona::before {
+.reasons--sedona::before {
   content: "";
   position: absolute;
   top: 363px;
@@ -73,10 +72,9 @@
     background-repeat: no-repeat;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
-    @media (min-resolution: @retina-dri), (min-resolution: @retina-dppx)
-      {
-      background-image: url("img/bg-back-tablet@2x.jpg");
-      background-size: 1338px auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -136,10 +134,9 @@
     background-repeat: no-repeat;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
-    @media (min-resolution: @retina-dri), (min-resolution: @retina-dppx)
-      {
-      background-image: url("img/bg-back-desktop@2x.jpg");
-      background-size: 2400px auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -153,7 +150,7 @@
 
   .reasons--sedona::before {
     position: absolute;
-    top: 460px;
+    top: 462px;
     left: 0.2px;
     height: 57px;
     width: 1200px;

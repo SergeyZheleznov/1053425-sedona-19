@@ -1,3 +1,39 @@
+.map {
+  display: block;
+  width: auto;
+  height: 350px;
+  margin: 0;
+}
+
+.map__position {
+  position: relative;
+  width: auto;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  top: 161px;
+  left: 146px;
+
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
   .map {
     width: 768px;
@@ -6,12 +42,26 @@
   }
 
   .map__position {
-    width: 768px;
+    width: auto;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
-  .map__picture {
-    width: 768px;
-    height: 350px;
+  .map__marker {
+    position: absolute;
+    top: 161px;
+    left: 370px;
   }
 }
 
@@ -21,11 +71,25 @@
   }
 
   .map__position {
-    width: 1200px;
+    width: auto;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
-  .map__picture {
-    width: 1200px;
-    height: 350px;
+  .map__marker {
+    position: absolute;
+    top: 162px;
+    left: 586px;
   }
 }
