@@ -28,7 +28,13 @@
                 <a href="#">HTML ACADEMY</a>
               </li>
               <li class="site-list__item site-list__item5 site-list__item-down">
-                <a href="index.html"><img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»"></a>
+                <a href="index.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+                    <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+                    <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
+                  </picture>
+                </a>
               </li>
             </ul>
           </div>
@@ -43,7 +49,9 @@
 
           <h2 class="visually-hidden">Причины для посещения городка Седона</h2>
           <div class="reasons__position">
-            <div class="reasons__index1 reasons--sedona"><img class="reasons__index" src="img/text-sedona-index.svg" width="281" height="214" alt="sedona"></div>
+            <div class="reasons__index1 reasons--sedona">
+              <img class="reasons__index" src="img/text-sedona-index.svg" width="281" height="214" alt="sedona">
+            </div>
             <p class="reasons__number-zero">Седона – небольшой <br> городок в Аризоне, <br> заслуживающий большего!</p>
             <p class="reasons__number-one">Рассмотрим 5 причин, по которым <br> Седона круче, чем Гранд Каньон!</p>
           </div>
@@ -56,8 +64,13 @@
                   <span class="realtown__number">– №1 –</span>
                   <p class="realtown__recomendation">Седона не аттрацион для туристов, <br> там течёт своя жизнь</p>
                 </div>
-                <span class="realtown__picture"><img class="realtown__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="фотография городка «Седона»"></span>
-
+                <span class="realtown__picture">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
+                    <img class="realtown__picture" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="фотография городка «Седона»">
+                  </picture>
+                </span>
                 <ul class="advantages">
                   <li class="advantages__home advantages__home--home">
                     <b class="advantages__title">Жильe</b>
@@ -89,7 +102,13 @@
                 <span class="bridge__number">– №2 –</span>
                 <p class="bridge__recomendation">Да, по нему можно пройти! Если вы <br>осмелитесь, конечно</p>
               </div>
-              <span class="bridge__picture"><img class="bridge__picture1" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография моста"></span>
+              <span class="bridge__picture">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="bridge__picture1" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография моста">
+                </picture>
+              </span>
             </li>
             <li class="square places">
               <div class="places__wrap">
@@ -132,7 +151,9 @@
 
         <section class="map">
           <h2 class="visually-hidden">Часть страницы с картой</h2>
-          <span class="map-position"><img class="map__picture" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта"></span>
+          <div class="map__position">
+            <img class="map__marker" src="img/icon-map-marker.svg" width="25" height="25" alt="map-marker">
+          </div>
         </section>
 
       </main>
