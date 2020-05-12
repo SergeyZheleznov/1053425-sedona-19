@@ -49,6 +49,6 @@
     "node": "8.16"
   },
   "dependencies": {
-    "html-minifier": "^4.0.0"
+
   }
 }
