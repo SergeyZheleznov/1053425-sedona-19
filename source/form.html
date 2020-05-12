@@ -59,30 +59,40 @@
             <fieldset class="customer">
               <legend class="customer__title">Представьтесь:</legend>
               <div class="customer__name">
-                <label for="customer-name-id">Имя<sup>*</sup>:</label>
-                <input type="text" name="customer-name" id="customer-name-id" placeholder="Петр" required="">
+                <label class="customer__name-letter" for="customer-name-id">Имя<sup>*</sup>:</label>
+                <div class="customer__name-wrap">
+                  <input class="customer__name-holder" type="text" name="customer-name" id="customer-name-id" placeholder="Петр" required="">
+                </div>
               </div>
               <div class="customer__surname">
-                <label for="customer-surname-id">Фамилия<sup>*</sup>:</label>
-                <input type="text" name="customer-surname" id="customer-surname-id" placeholder="Иванов" required="">
+                <label class="customer__surname-letter" for="customer-surname-id">Фамилия<sup>*</sup>:</label>
+                <div class="customer__surname-wrap">
+                  <input class="customer__surname-holder"type="text" name="customer-surname" id="customer-surname-id" placeholder="Иванов" required="">
+                </div>
               </div>
               <div class="customer__patronymic">
-                <label for="customer-patronymic-id">Отчество:</label>
-                <input type="text" name="customer-patronymic" id="customer-patronymic-id" placeholder="Александрович">
+                <label class="customer__patronymic-letter" for="customer-patronymic-id">Отчество:</label>
+                <div class="customer__patronymic-wrap">
+                  <input class="customer__patronymic-holder" type="text" name="customer-patronymic" id="customer-patronymic-id" placeholder="Александрович">
+                </div>
               </div>
             </fieldset>
 
             <fieldset class="contacts">
               <legend class="contacts__title">Контактная информация:</legend>
               <div class="contacts__tel">
-                <label for="telephone">Контактный телефон<sup>*</sup>:</label>
+                <label class="contacts__tel-text" for="telephone">Контактный телефон<sup>*</sup>:</label>
                 <br>
-                <input type="tel" name="tel" id="telephone" value="Введите телефон" required="">
+                <div class="contacts__tel-wrap">
+                  <input class="contacts__tel-input" type="tel" name="tel" id="telephone" value="Введите телефон" required="">
+                </div>
               </div>
               <div class="contacts__email">
-                <label for="e-mail">Электронная почта<sup>*</sup>:</label>
+                <label class="contacts__email-text" for="e-mail">Электронная почта<sup>*</sup>:</label>
                 <br>
-                <input type="email" name="email" id="e-mail" value="Введите e-mail" required="">
+                <div class="contacts__email-wrap">
+                  <input class="contacts__email-input" type="email" name="email" id="e-mail" value="Введите e-mail" required="">
+                </div>
               </div>
             </fieldset>
 
@@ -178,19 +188,20 @@
           </div>
         </div>
         <div class="module1__wrap2">
-          <button type="submit" class="button button-module1">Ок</button>
+          <button type="submit" class="button-module1">Ок</button>
         </div>
       </section>
 
       <section class="module2">
         <div class="module2__wrap1">
-          <h2 class="module2__text">Ваш отзыв уже отправлен</h2>
+          <h2 class="module2__text">Ваш отзыв отправлен!</h2>
           <div class="module2__content">
-            <p class="module2__content-text1">Спасибо за участие, ваш </p>
+            <p class="module2__content-text1">Спасибо за ваше участие, ваш </p>
             <p class="module2__content-text2">отзыв уже поступил к нам. </p>
             <p class="module2__content-text3">В ближайшее время мы </p>
             <p class="module2__content-text4">опубликуем его на сайте.</p>
           </div>
+        </div>
         <div class="module2__wrap2">
           <button type="submit" class="button button-module2">Закрыть окно</button>
         </div>

@@ -1,16 +1,20 @@
 .module2 {
-  position: absolute;
-  display: flex;
+  display: none;
+  position: relative;
+  z-index: 2;
+  top: -540px;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
   width: 320px;
-  margin: 0;
-  padding: 38px 0px 48px;
+  padding: 38px 0.2px 0.2px;
   text-align: center;
   color: #000000;
   background-color: #ffffff;
+  box-shadow: 0.2px 7px 15px 0.2px rgba(0, 1, 1, 0.15);
 }
 
 .module2__wrap1 {
@@ -49,7 +53,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 33px;
   font-size: @little-font;
   line-height: 24px;
   text-align: center;
@@ -81,4 +85,82 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .module2 {
+    top: -540px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 640px;
+    padding: 0;
+  }
 
+  .module2__wrap1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 414px;
+    margin: 44px 91px 0.2px;
+    padding: 0;
+    padding-top: 17px;
+    text-align: center;
+  }
+
+  .module2__text {
+    display: block;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .module2__content {
+    display: block;
+    width: 414px;
+  }
+
+  .module2__content-text1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .module2__content-text2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .module2__content-text3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .module2__content-text4 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .module2__wrap2 {
+    width: 640px;
+    height: 146px;
+    padding-top: 44px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .module2 {
+    top: -540px;
+  }
+}
