@@ -1,8 +1,25 @@
 .checkbox {
+  position: relative;
+  padding: 32px 25px 1px 97px;
+  font-weight: 700;
   border: none;
 }
 
+.checkbox--borders::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top:  340px;
+  left: 1px;
+  z-index: 10;
+
+  width: 320px;
+  height: 1px;
+  background-color: rgba(1, 1, 1, 0.1);
+}
+
 .checkbox__title {
+  margin-top: 17px;
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
@@ -11,38 +28,48 @@
   color: #000000;
 }
 
-.checkbox__one {
+.checkbox__wrap {
+  display: block;
+  height: 79.5px;
+}
+
+.checkbox__label {
+  position: relative;
+  display: block;
+  margin-bottom: 21px;
   font-size: @medium-font;
-  font-weight: 700;
+  font-weight: 700px;
   line-height: 26px;
   text-align: left;
-  text-transform: none;
   color: #000000;
 }
 
-.checkbox__two {
-  font-size: @medium-font;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: #000000;
+.checkbox--quadrate::before {
+  content: "";
+  position: absolute;
+  top:  -13px;
+  left: -78px;
+  display: block;
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  background-color: @gray;
+  border-radius: 4px;
 }
 
-.checkbox__three {
-  font-size: @medium-font;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: #000000;
-}
+/* когда у нашего инпута состояние чект, то есть стоит галочка,
+то у нас должна быть картинка с галочкой */
 
-.checkbox__four {
-  font-size: @medium-font;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: #000000;
+.checkbox__input:checked + .checkbox--quadrate::after {
+  content: "";
+  position: absolute;
+  top:  6px;
+  left: -61px;
+  z-index: 10;
+
+  display: block;
+  width: 52px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-tick.svg");
 }
