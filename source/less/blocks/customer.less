@@ -1,7 +1,7 @@
 .customer {
   width: auto;
   margin-top: 18px;
-  padding: 24px 19px 25px;
+  padding: 24px 17px 21px;
   border: none;
 }
 
@@ -39,22 +39,12 @@
   color: #000000;
 }
 
-.customer__name-wrap {
-  display: inline-block;
-  width: 227px;
-  height: 58px;
-  margin: 0;
-  padding: 0;
-  background-color: @gray;
-}
-
 .customer__name-holder {
-  width: 150px;
+  width: 230px;
   height: 58px;
   margin: 0;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding: 0;
+  margin-bottom: 23px;
+  padding-left: 23px;
 
   font-size: 18px;
   font-weight: 700;
@@ -70,7 +60,7 @@
   width: auto;
   height: 58px;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 19px;
   padding: 0;
 }
 
@@ -78,7 +68,7 @@
   width: 230px;
   height: 58px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 12px;
   padding: 0;
 
   font-size: @little-font;
@@ -89,23 +79,11 @@
   color: #000000;
 }
 
-.customer__surname-wrap {
-  display: inline-block;
-  width: 100px;
-  height: 58px;
-  margin: 0;
-
-  padding: 0;
-  background-color: @gray;
-}
-
 .customer__surname-holder {
-  width: 170px;
+  width: 190px;
   height: 58px;
-  margin: 0;
-  margin-left: 20px;
   margin-bottom: 20px;
-  padding: 0;
+  padding-left: 22px;
 
   font-size: 18px;
   font-weight: 700;
@@ -121,7 +99,7 @@
   width: auto;
   height: 58px;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 19px;
   padding: 0;
 }
 
@@ -129,7 +107,7 @@
   width: 230px;
   height: 58px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 14px;
   padding: 0;
 
   font-size: @little-font;
@@ -140,22 +118,10 @@
   color: #000000;
 }
 
-.customer__patronymic-wrap {
-  display: inline-block;
-  width: 100px;
-  height: 58px;
-  margin: 0;
-
-  padding: 0;
-  background-color: @gray;
-}
-
 .customer__patronymic-holder {
-  width: 175px;
+  width: 193px;
   height: 58px;
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
+  padding-left: 22px;
 
   font-size: 18px;
   font-weight: 700;
@@ -165,4 +131,57 @@
 
   background-color: @gray;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .customer {
+    width: 379px;
+    margin-top: 30px;
+  }
+
+  .customer__title {
+    width: 275px;
+    margin: 0;
+    margin-left: 36px;
+    font-size: @large-font;
+    text-align: left;
+  }
+
+  .customer__name {
+    display: block;
+    height: 44px;
+    margin-top: 34px;
+    margin-left: 1px;
+    padding-left: 36px;
+  }
+
+  .customer__surname {
+    display: block;
+    height: 44px;
+    margin-top: 34px;
+    margin-left: 1px;
+    padding-left: 36px;
+  }
+
+  .customer__patronymic {
+    display: block;
+    height: 44px;
+    margin-top: 34px;
+    margin-left: 1px;
+    padding-left: 36px;
+  }
+
+  .customer__name-holder {
+    width: 218px;
+  }
+
+  .customer__surname-holder,
+  .customer__patronymic-holder {
+    width: 178px;
+  }
+
+  .customer__label {
+    margin: 0;
+    padding-left: 106px;
+  }
 }

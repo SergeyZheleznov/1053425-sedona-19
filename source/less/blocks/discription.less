@@ -20,7 +20,6 @@
   font-weight: 700;
   line-height: 35px;
   text-align: left;
-
   text-transform: none;
   color: #000000;
 }
@@ -44,4 +43,30 @@
   width: 279px;
   height: 160px;
   background-color: rgba(1, 1, 1, 0.05);
+}
+
+@media (min-width: @tablet-width) {
+  .discription {
+    width: 764px;
+  }
+
+  .discription--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 26px;
+    left: 60px;
+    width: 125px;
+    height: 1px;
+  }
+
+  .discription--borders::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 26px;
+    left: 581px;
+    width: 125px;
+    height: 1px;
+  }
 }

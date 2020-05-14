@@ -2,7 +2,7 @@
   position: relative;
   width: auto;
   margin-top: 23px;
-  padding: 20px 17.5px 28px;
+  padding: 20px 17px 28px;
   border: none;
 }
 
@@ -89,22 +89,11 @@
   background-image: url("../img/icon-phone.svg");
 }
 
-.contacts__tel-wrap {
-  display: inline-block;
-  width: 280px;
-  height: 58px;
-  margin: 0;
-  margin-top: 4px;
-  padding: 0;
-  background-color: @gray;
-}
-
 .contacts__tel-input {
-  width: 175px;
+  width: 222px;
   height: 58px;
-  margin: 0;
-  margin-left: 23px;
-  padding: 0;
+  margin-top: 6px;
+  padding-left: 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -163,22 +152,11 @@
   background-image: url("../img/icon-mail.svg");
 }
 
-.contacts__email-wrap {
-  display: inline-block;
-  width: 280px;
-  height: 58px;
-  margin: 0;
-  margin-top: 6px;
-  padding: 0;
-  background-color: @gray;
-}
-
 .contacts__email-input {
-  width: 175px;
+  width: 222px;
   height: 58px;
-  margin: 0;
-  margin-left: 23px;
-  padding: 0;
+  margin-top: 6px;
+  padding-left: 23px;
 
   font-size: 18px;
   font-weight: 700;
@@ -188,4 +166,96 @@
 
   background-color: @gray;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    width: 764px;
+    margin-top: 62px;
+    padding: 20px 20px 1px 57px;
+  }
+
+  .contacts__title {
+    width: 280px;
+    margin: 0;
+    margin-left: 36px;
+    font-size: @large-font;
+    text-align: center;
+  }
+
+  .contacts__tel-text {
+    display: inline-block;
+    height: 20px;
+    padding-top: 6px;
+  }
+
+  .contacts__tel-input {
+    width: 600px;
+    margin-top: 8.5px;
+  }
+
+  .contacts--tube::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 570px;
+  }
+
+  .contacts--tube::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 590px;
+  }
+
+  .contacts__email {
+    margin-top: 15px;
+  }
+
+  .contacts__email-text {
+    display: inline-block;
+    height: 20px;
+    padding-top: 6px;
+  }
+
+  .contacts__email-input {
+    width: 600px;
+    margin-top: 11px;
+  }
+
+  .contacts--envelope::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 570px;
+  }
+
+  .contacts--envelope::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 590px;
+  }
+
+  .contacts--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 11px;
+    left: 60px;
+    width: 125px;
+    height: 1px;
+  }
+
+  .contacts--borders::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 11px;
+    left: 581px;
+    width: 125px;
+    height: 1px;
+  }
 }

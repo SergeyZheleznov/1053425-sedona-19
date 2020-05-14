@@ -1,6 +1,7 @@
 .radio {
   position: relative;
-  padding: 38px 25px 1px 97px;
+  margin-top: 13px;
+  padding: 38px 25px 1px;
   font-weight: 700;
   border: none;
 }
@@ -9,7 +10,7 @@
   content: "";
   position: absolute;
   display: block;
-  top: 245px;
+  top: 272px;
   left: 1px;
   z-index: 10;
 
@@ -19,6 +20,7 @@
 }
 
 .radio__title {
+  display: block;
   width: 236px;
   margin-left: auto;
   margin-right: auto;
@@ -35,6 +37,7 @@
   position: relative;
   display: block;
   margin-bottom: 21px;
+  padding-left: 73px;
   font-size: @medium-font;
   font-weight: 700px;
   line-height: 26px;
@@ -46,11 +49,11 @@
   content: "";
   position: absolute;
   top: -13px;
-  left: -78px;
+  left: -5px;
   display: block;
   z-index: 10;
-  width: 52px;
-  height: 52px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: @gray;
 }
@@ -61,12 +64,12 @@
 .radio__input:checked + .radio--circle::after {
   content: "";
   position: relative;
-  top: -24px;
-  left: -63px;
+  top: -23px;
+  left: -62px;
   display: block;
   z-index: 10;
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 1);
 }
@@ -74,4 +77,58 @@
 .radio__wrap {
   display: block;
   height: 69px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio {
+    width: 380px;
+    margin-top: 30px;
+  }
+
+  .radio__title {
+    width: 275px;
+    margin: 0;
+    margin-left: 31px;
+    font-size: @large-font;
+    text-align: left;
+  }
+
+  .radio__label {
+    margin: 0;
+    padding-left: 106px;
+  }
+
+  .radio--circle::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 33px;
+  }
+
+  .radio__input:checked + .radio--circle::after {
+    content: "";
+    position: relative;
+    top: -22px;
+    left: -56px;
+  }
+
+  .radio__wrap {
+    display: block;
+    margin-top: 34px;
+    margin-left: 1px;
+    height: 44px;
+  }
+
+  .radio--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 381px;
+    z-index: 10;
+
+    width: 1px;
+    height: 292px;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
 }
