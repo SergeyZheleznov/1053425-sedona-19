@@ -132,3 +132,23 @@
     background-color: rgba(1, 1, 1, 0.1);
   }
 }
+
+@media (min-width: @desktop-width) {
+  .radio {
+    width: 592px;
+    margin-top: 25px;
+    padding: 38px 1px 4px 90px;
+  }
+
+  .radio__title {
+    margin-left: 107px;
+  }
+
+  .radio--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 599px;
+  }
+}

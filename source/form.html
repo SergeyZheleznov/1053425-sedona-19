@@ -74,15 +74,17 @@
 
             <fieldset class="contacts contacts--borders">
               <legend class="contacts__title">Контактная информация:</legend>
-              <div class="contacts__tel">
-                <label class="contacts__tel-text contacts--tube" for="telephone">Контактный телефон<sup>*</sup>:</label>
-                <br>
-                <input class="contacts__tel-input" type="tel" name="tel" id="telephone" value="Введите телефон" required="">
-              </div>
-              <div class="contacts__email">
-                <label class="contacts__email-text contacts--envelope" for="e-mail">Электронная почта<sup>*</sup>:</label>
-                <br>
-                <input class="contacts__email-input" type="email" name="email" id="e-mail" value="Введите e-mail" required="">
+              <div class="contacts__wrap">
+                <div class="contacts__tel">
+                  <label class="contacts__tel-text contacts--tube" for="telephone"><span class="contacts__tel1">Контактный</span><span class="contacts__tel2"></span> телефон<sup>*</sup>:</span></label>
+                  <br>
+                  <input class="contacts__tel-input" type="tel" name="tel" id="telephone" value="Введите телефон" required="">
+                </div>
+                <div class="contacts__email">
+                  <label class="contacts__email-text contacts--envelope" for="e-mail">Электронная почта<sup>*</sup>:</label>
+                  <br>
+                  <input class="contacts__email-input" type="email" name="email" id="e-mail" value="Введите e-mail" required="">
+                </div>
               </div>
             </fieldset>
 
@@ -103,7 +105,7 @@
             </fieldset>
 
             <fieldset class="checkbox checkbox--borders">
-              <legend class="checkbox__title">Посещенные<br>достопримечательности:</legend>
+              <legend class="checkbox__title">Посещенные<br> достопримечательности:</legend>
               <div class="checkbox__wrap-wrap">
                 <div class="checkbox__wrap">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="one" checked="">
