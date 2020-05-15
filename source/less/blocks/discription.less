@@ -110,7 +110,7 @@
   }
 
   .discription--quadrate::after {
-    content: "* - обязательные поля";
+    content: "* — обязательные поля";
     position: absolute;
     top: 85px;
     left: 470px;
@@ -127,5 +127,64 @@
   .discription__comment {
     width: 606px;
     height: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .discription {
+    position: relative;
+    width: 1196px;
+    margin-top: 0;
+    padding: 42px 55px 20px 112px;
+  }
+
+  .discription__title {
+    width: 255px;
+    margin-left: 1px;
+    text-align: center;
+  }
+
+  .discription--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 120px;
+    width: 274px;
+    height: 1px;
+  }
+
+  .discription--borders::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 800px;
+    width: 274px;
+    height: 1px;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+
+  .discription--quadrate::before {
+    content: "";
+    position: absolute;
+    width: 960px;
+  }
+
+  .discription--quadrate::after {
+    content: "* - обязательные поля";
+    position: absolute;
+    top: 85px;
+    left: 783px;
+  }
+
+  .discription__comment {
+    width: 906px;
+    height: 120px;
+  }
+
+  .discription__text {
+    position: relative;
+    width: 900px;
   }
 }
