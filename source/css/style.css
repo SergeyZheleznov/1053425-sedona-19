@@ -459,27 +459,34 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
           box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 }
-.site-list__item:hover {
-  background-color: #669ce0;
-}
-.site-list__item:active,
-.site-list__item:focus {
-  background-color: #5496bd;
-}
-.site-list__item:active a,
-.site-list__item:focus a {
-  color: rgba(255, 255, 255, 0.3);
-}
-.site-list__item-top {
-  position: relative;
-  text-align: right;
-}
 .site-list__item a {
   font-size: 18px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+}
+.site-list__item1:hover {
+  background-color: #669ce0;
+}
+.site-list__item2:hover {
+  background-color: #669ce0;
+}
+.site-list__item3:hover {
+  background-color: #669ce0;
+}
+.site-list__item4:hover {
+  background-color: #669ce0;
+}
+.site-list__item--active {
+  background-color: #5496bd;
+}
+.site-list__item--active a {
+  color: rgba(255, 255, 255, 0.3);
+}
+.site-list__item-top {
+  position: relative;
+  text-align: right;
 }
 .site-list__item-top a {
   margin-right: 123px;
@@ -502,17 +509,32 @@ input[type="checkbox"].visually-hidden {
     font-size: 14px;
     color: #000000;
   }
-  .site-list__item a:hover {
+  .site-list__item1:hover {
+    background-color: #ffffff;
+  }
+  .site-list__item2:hover {
+    background-color: #ffffff;
+  }
+  .site-list__item3:hover {
+    background-color: #ffffff;
+  }
+  .site-list__item4:hover {
+    background-color: #ffffff;
+  }
+  .site-list__item:hover a {
     color: #81b3d2;
-  }
-  .site-list__item a:active {
-    color: #766357;
-  }
-  .site-list__item a:focus {
-    color: rgba(0, 0, 0, 0.3);
   }
   .site-list__item-down {
     width: 156px;
+  }
+  .site-list__item--active a {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .site-list__item:active a {
+    color: #776357;
+  }
+  .site-list__item--active:active a {
+    color: rgba(118, 99, 87, 0.3);
   }
   .site-list__item5 {
     -webkit-box-ordinal-group: 3;
@@ -812,7 +834,7 @@ input[type="checkbox"].visually-hidden {
 .advantages__souvenires {
   display: block;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0;
   width: 210px;
   text-align: left;
@@ -828,22 +850,7 @@ input[type="checkbox"].visually-hidden {
   text-transform: uppercase;
   color: #333333;
 }
-.advantages__description1-text1 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-.advantages__description1-text2 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-.advantages__description1-text3 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-.advantages__description1-text4 {
+.advantages__description1-text {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -961,17 +968,11 @@ input[type="checkbox"].visually-hidden {
   .advantages__description br {
     display: none;
   }
-  .advantages__description1-text2 {
+  .advantages__description1-text {
     display: inline-block;
     margin: 0;
-    margin-left: 28px;
     padding: 0;
-  }
-  .advantages__description1-text4 {
-    display: inline-block;
-    margin: 0;
-    margin-left: 27px;
-    padding: 0;
+    text-align: center;
   }
   .advantages__home--home::after {
     content: "";
@@ -1020,24 +1021,9 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     padding: 0;
   }
-  .advantages__description1-text1 {
+  .advantages__description1-text {
     display: block;
     text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .advantages__description1-text2 {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
-  .advantages__description1-text3 {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
-  .advantages__description1-text4 {
-    display: inline-block;
     margin: 0;
     padding: 0;
   }
@@ -1680,11 +1666,6 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   padding: 0;
 }
-.question__search {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
 @media (min-width: 768px) {
   .question {
     position: relative;
@@ -1746,17 +1727,14 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     padding: 0;
   }
-  .button {
+  .question__search {
     width: 458px;
     height: 58px;
     margin: 0;
+    padding: 0;
     font-size: 21px;
   }
-  .question__search {
-    margin: 0;
-    padding: 0;
-  }
-  .button a {
+  .question__search a {
     margin: 0;
     padding: 0;
   }
@@ -1819,10 +1797,6 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     padding: 0;
   }
-  .button a {
-    margin: 0;
-    padding: 0;
-  }
 }
 .button {
   display: block;
@@ -1843,10 +1817,6 @@ input[type="checkbox"].visually-hidden {
 }
 .button:focus {
   background-color: #5496bd;
-}
-.button:active a,
-.button:focus a {
-  color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
   .button {
@@ -3227,6 +3197,31 @@ footer {
   border-radius: 50%;
   background-color: #f2f2f2;
 }
+.radio--circle:hover::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+.radio--circle:focus::before,
+.radio--circle:active::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #d5d5d5;
+}
 /* когда у нашего радио-инпута состояние чект, то есть стоит кружок,
 то у нас должен бы на нём псевдоэлемента афтер*/
 .radio__input:checked + .radio--circle::after {
@@ -3240,6 +3235,19 @@ footer {
   height: 21px;
   border-radius: 50%;
   background-color: #000000;
+}
+.radio__input:checked + .radio--circle:focus::after,
+.radio__input:checked + .radio--circle:active::after {
+  content: "";
+  position: relative;
+  top: -23px;
+  left: -62px;
+  display: block;
+  z-index: 10;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #333333;
 }
 .radio__wrap {
   display: block;
@@ -3362,6 +3370,31 @@ footer {
   background-color: #f2f2f2;
   border-radius: 4px;
 }
+.checkbox--quadrate:hover::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -7px;
+  display: block;
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+}
+.checkbox--quadrate:focus::before,
+.checkbox--quadrate:active::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -7px;
+  display: block;
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  background-color: #d5d5d5;
+  border-radius: 4px;
+}
 /* когда у нашего инпута состояние чект, то есть стоит галочка,
 то у нас должна быть картинка с галочкой */
 .checkbox__input:checked + .checkbox--quadrate::after {
@@ -3375,6 +3408,20 @@ footer {
   height: 52px;
   background-repeat: no-repeat;
   background-image: url("../img/icon-tick.svg");
+}
+.checkbox__input:checked + .checkbox--quadrat:focus::after,
+.checkbox__input:checked + .checkbox--quadrat:active::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  z-index: 10;
+  display: block;
+  width: 52px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-tickop03.svg");
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   .checkbox {

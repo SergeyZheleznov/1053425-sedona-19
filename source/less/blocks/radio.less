@@ -55,7 +55,34 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: @gray;
+  background-color: #f2f2f2;
+}
+
+.radio--circle:hover::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.radio--circle:focus::before,
+.radio--circle:active::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #d5d5d5;
 }
 
 /* когда у нашего радио-инпута состояние чект, то есть стоит кружок,
@@ -72,6 +99,20 @@
   height: 21px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 1);
+}
+
+.radio__input:checked + .radio--circle:focus::after,
+.radio__input:checked + .radio--circle:active::after {
+  content: "";
+  position: relative;
+  top: -23px;
+  left: -62px;
+  display: block;
+  z-index: 10;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #333333;
 }
 
 .radio__wrap {
