@@ -774,9 +774,6 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     padding: 0;
   }
-  .places__recomendation br {
-    display: none;
-  }
   .places__shortrecomendation {
     width: 262px;
   }
@@ -947,9 +944,6 @@ input[type="checkbox"].visually-hidden {
     margin-left: 5px;
     padding: 0;
   }
-  .advantages__meal br {
-    display: none;
-  }
   .advantages__title {
     display: block;
     margin: 0;
@@ -965,10 +959,7 @@ input[type="checkbox"].visually-hidden {
     font-size: 14px;
     text-align: center;
   }
-  .advantages__description br {
-    display: none;
-  }
-  .advantages__description1-text {
+  .advantages__description1-text1 {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -1021,8 +1012,9 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     padding: 0;
   }
-  .advantages__description1-text {
+  .advantages__description1-text1 {
     display: block;
+    width: 213px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -1068,9 +1060,6 @@ input[type="checkbox"].visually-hidden {
     margin-right: 12px;
     padding: 0;
   }
-  .advantages__souvenires br {
-    display: none;
-  }
 }
 .reasons {
   position: relative;
@@ -1109,6 +1098,7 @@ input[type="checkbox"].visually-hidden {
 }
 .reasons__number-zero {
   display: inline-block;
+  width: 270px;
   padding-top: 22px;
   padding-left: 30px;
   font-size: 18px;
@@ -1163,9 +1153,6 @@ input[type="checkbox"].visually-hidden {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .reasons__position br {
-    display: none;
-  }
   .reasons__number-zero {
     width: 490px;
     margin: 52px auto;
@@ -1176,6 +1163,7 @@ input[type="checkbox"].visually-hidden {
     font-weight: 700;
   }
   .reasons__number-one {
+    width: 493px;
     padding: 0;
     margin: 0 auto 51px;
     padding-top: 10px;
@@ -1289,10 +1277,11 @@ input[type="checkbox"].visually-hidden {
 }
 .realtown__recomendation {
   display: block;
+  width: 268px;
   padding: 0;
   margin: 0;
+  margin-left: 30px;
   padding-top: 15px;
-  margin-right: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -1329,11 +1318,9 @@ input[type="checkbox"].visually-hidden {
     padding: 0;
     font-size: 21px;
   }
-  .realtown__recomendation br {
-    display: none;
-  }
   .realtown__recomendation {
     margin: 0;
+    padding: 0;
     padding-top: 22px;
   }
   .realtown__picture {
@@ -2135,6 +2122,8 @@ footer {
   color: #000000;
 }
 .photos-head__text {
+  width: 270px;
+  margin-left: 25px;
   margin-bottom: 22px;
   font-size: 14px;
   line-height: 26px;
@@ -2169,10 +2158,6 @@ footer {
     font-size: 30px;
     margin-top: 55px;
     margin-bottom: 20px;
-  }
-  .photos-head__text br {
-    display: none;
-    width: 428px;
   }
   .photos-head__text {
     width: 428px;
@@ -3100,9 +3085,6 @@ footer {
     left: 800px;
     width: 274px;
     height: 1px;
-  }
-  br {
-    display: none;
   }
   .contacts__tel1 {
     display: none;
@@ -4170,8 +4152,8 @@ footer {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 7px 15px 0.1px rgba(0, 1, 1, 0.15);
-          box-shadow: 0px 7px 15px 0.1px rgba(0, 1, 1, 0.15);
+  -webkit-box-shadow: 0.1px 7px 15px 0.1px rgba(0, 1, 1, 0.15);
+          box-shadow: 0.1px 7px 15px 0.1px rgba(0, 1, 1, 0.15);
 }
 .module1__wrap1 {
   position: relative;
@@ -4589,7 +4571,7 @@ footer {
   height: 11px;
   border-radius: 50%;
   background-color: #ffffff;
-  opacity: 1;
+  opacity: 0.98;
 }
 .panel__wrap2 {
   display: -webkit-box;
@@ -4632,20 +4614,20 @@ footer {
 }
 .panel__replay path,
 .panel__subtitles path,
-.panel__fullscreen path {
+.panel__fullscreen svg {
   fill: #5c6870;
 }
 .panel__replay:hover path,
 .panel__subtitles:hover path,
-.panel__fullscreen:hover path {
+.panel__fullscreen:hover svg {
   fill: #333333;
 }
 .panel__replay:active path,
 .panel__subtitles:active path,
-.panel__fullscreen:active path,
+.panel__fullscreen:active svg,
 .panel__replay:focus path,
 .panel__subtitles:focus path,
-.panel__fullscreen:focus path {
+.panel__fullscreen:focus svg {
   fill: #333333;
   opacity: 0.3;
 }
@@ -4674,7 +4656,7 @@ footer {
   }
   .panel__wrap2 {
     position: absolute;
-    top: 0px;
+    top: 0.1px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4716,27 +4698,13 @@ footer {
   }
   .panel__replay path,
   .panel__subtitles path,
-  .panel__fullscreen {
+  .panel__fullscreen svg {
     fill: #ffffff;
   }
-  /*
-  .panel__replay:hover path,
-  .panel__subtitles:hover path,
-  */
-  .panel__fullscreen:hover {
+  .panel__fullscreen svg {
     fill: #ffffff;
     opacity: 0.6;
   }
-  /*
-  .panel__replay:active path,
-  .panel__subtitles:active path,
-  .panel__fullscreen:active path,
-  .panel__replay:focus path,
-  .panel__subtitles:focus path,
-  .panel__fullscreen:focus path {
-    fill: #ffffff;
-    opacity: 0.3;
-  }*/
 }
 .social-button {
   display: -webkit-box;
