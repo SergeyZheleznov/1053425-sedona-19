@@ -146,10 +146,21 @@
     left: 33px;
   }
 
+  .radio--circle:hover::before {
+    content: "";
+    left: 33px;
+  }
+
   .radio__input:checked + .radio--circle::after {
     content: "";
     position: relative;
     top: -22px;
+    left: -56px;
+  }
+
+  .radio__input:checked + .radio--circle:focus::after,
+  .radio__input:checked + .radio--circle:active::after {
+    content: "";
     left: -56px;
   }
 

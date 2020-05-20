@@ -42,7 +42,8 @@
 }
 
 .contacts__tel {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   width: auto;
   height: 96px;
   margin: 0;
@@ -115,9 +116,9 @@
   outline-offset: -4px;
 }
 
-
 .contacts__email {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   width: auto;
   height: 96px;
   margin: 0;
@@ -290,7 +291,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 44px 1px 1px 40px;
+    padding: 54px 1px 1px 40px;
   }
 
   .contacts {
@@ -302,10 +303,18 @@
     text-align: left;
   }
 
+  .contacts__tel {
+    display: flex;
+    flex-direction: row;
+    width: 430px;
+    margin-top: 1px;
+  }
+
   .contacts__tel-input {
     width: 260px;
-    margin-top: 9px;
-    margin-left: 8px;
+    margin: 0;
+    margin-left: 12px;
+    padding-left: 22px;
   }
 
   .contacts--borders::before {
@@ -332,56 +341,62 @@
   }
 
   .contacts__tel-text {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     width: 72px;
     height: 25px;
-    padding-top: 10px;
+    padding-top: 18px;
   }
 
   .contacts__email-text {
     display: inline-block;
     width: 151px;
     height: 20px;
-    padding-top: 10px;
+    margin-left: 40px;
+    padding-top: 18px;
   }
 
   .contacts__email-input {
     width: 260px;
-    margin-top: 9px;
-    margin-left: 8px;
+    margin-top: 0.1px;
+    margin-left: 15px;
+    padding-left: 20px;
   }
 
   .contacts--tube::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: 343px;
+    top: 0.1px;
+    left: 342px;
   }
 
   .contacts--tube::after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 20px;
     left: 363px;
   }
 
   .contacts__email {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
     margin-top: 1px;
-    margin-left: 113px;
+    margin-left: 30px;
   }
 
   .contacts--envelope::before {
     content: "";
     position: absolute;
-    top: -7px;
+    top: 0.1px;
     left: 423px;
   }
 
   .contacts--envelope::after {
     content: "";
     position: absolute;
-    top: 14px;
-    left: 443px;
+    top: 22px;
+    left: 444px;
   }
 
   .contacts__tel,
