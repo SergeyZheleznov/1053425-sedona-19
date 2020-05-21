@@ -3,6 +3,7 @@
   width: auto;
   height: 350px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .map__position {
@@ -36,7 +37,7 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    width: 768px;
+    width: auto;
     height: 350px;
     margin: 0;
   }
@@ -58,6 +59,10 @@
     }
   }
 
+  .map__interactive {
+    width: 768px;
+  }
+
   .map__marker {
     position: absolute;
     top: 161px;
@@ -67,7 +72,7 @@
 
 @media (min-width: @desktop-width) {
   .map {
-    width: 1200px;
+    width: auto;
   }
 
   .map__position {
@@ -91,5 +96,10 @@
     position: absolute;
     top: 162px;
     left: 586px;
+  }
+
+
+  .map__interactive {
+    width: 1200px;
   }
 }

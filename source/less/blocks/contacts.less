@@ -1,8 +1,8 @@
 .contacts {
   position: relative;
-  width: auto;
-  margin-top: 23px;
-  padding: 20px 17px 28px;
+  min-width: 286px;
+  margin-top: 24px;
+  padding: 20px 18px 28px;
   border: none;
 }
 
@@ -41,9 +41,16 @@
   color: #000000;
 }
 
+.contacts__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .contacts__tel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
   height: 96px;
   margin: 0;
@@ -52,10 +59,10 @@
 
 .contacts__tel-text {
   position: relative;
-  width: 280px;
-  height: 58px;
+  width: 165px;
+  height: 20px;
   margin: 0;
-  margin-left: 22px;
+  margin-left: 20px;
   padding: 0;
   font-size: @little-font;
   font-weight: 400;
@@ -65,10 +72,25 @@
   color: #000000;
 }
 
+.contacts__tel-input {
+  position: relative;
+  width: 222px;
+  height: 58px;
+  margin-top: 14px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  border: none;
+  background-color: #f2f2f2;
+}
+
 .contacts--tube::before {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 34px;
   left: 200px;
   display: block;
   z-index: 5;
@@ -80,29 +102,14 @@
 .contacts--tube::after {
   content: "";
   position: absolute;
-  top: 50px;
-  left: 221px;
+  top: 54px;
+  left: 222px;
   z-index: 10;
   display: block;
   width: 52px;
   height: 52px;
   background-repeat: no-repeat;
   background-image: url("../img/icon-phone.svg");
-}
-
-.contacts__tel-input {
-  width: 222px;
-  height: 58px;
-  margin-top: 4px;
-  margin-bottom: 2px;
-  padding-left: 23px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  color: #000000;
-  background-color: @gray;
-  border: none;
 }
 
 .contacts__tel-input:hover {
@@ -118,20 +125,21 @@
 
 .contacts__email {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
   height: 96px;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 6px;
+  margin-bottom: 4px;
   padding: 0;
 }
 
 .contacts__email-text {
   position: relative;
-  width: 280px;
-  height: 58px;
+  width: 165px;
+  height: 20px;
   margin: 0;
-  margin-left: 22px;
+  margin-left: 20px;
   padding: 0;
   font-size: @little-font;
   font-weight: 400;
@@ -144,7 +152,7 @@
 .contacts--envelope::before {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 34px;
   left: 200px;
   display: block;
   z-index: 10;
@@ -156,7 +164,7 @@
 .contacts--envelope::after {
   content: "";
   position: absolute;
-  top: 49px;
+  top: 55px;
   left: 222px;
   z-index: 10;
   display: block;
@@ -169,9 +177,8 @@
 .contacts__email-input {
   width: 222px;
   height: 58px;
-  margin-top: 4px;
-  margin-bottom: 2px;
-  padding-left: 23px;
+  margin-top: 14px;
+  padding-left: 20px;
 
   font-size: 18px;
   font-weight: 700;
@@ -198,15 +205,25 @@
   .contacts {
     display: flex;
     flex-direction: row;
-    width: 764px;
+    flex-wrap: wrap;
+    width: 768px;
     margin-top: 62px;
-    padding: 20px 20px 1px 57px;
+    padding: 20px 20px 1px 59px;
+  }
+
+  .contact__wrap {
+    height: auto;
+  }
+
+  .contacts__tel {
+    flex-direction: column;
+    height: 99px;
   }
 
   .contacts__title {
     width: 280px;
     margin: 0;
-    margin-left: 36px;
+
     font-size: @large-font;
     text-align: center;
   }
@@ -218,25 +235,30 @@
   }
 
   .contacts__tel-input {
+    display: block;
     width: 600px;
-    margin-top: 8.5px;
+    height: 58px;
+    margin-top: 18px;
   }
 
   .contacts--tube::before {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 38px;
     left: 570px;
+    width: 58px;
+    height: 58px;
   }
 
   .contacts--tube::after {
     content: "";
     position: absolute;
-    top: 55px;
+    top: 57px;
     left: 590px;
   }
 
   .contacts__email {
+    flex-direction: column;
     margin-top: 15px;
   }
 
@@ -248,7 +270,8 @@
 
   .contacts__email-input {
     width: 600px;
-    margin-top: 11px;
+    height: 58px;
+    margin-top: 18px;
   }
 
   .contacts--envelope::before {
