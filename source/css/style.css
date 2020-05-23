@@ -1014,7 +1014,7 @@ input[type="checkbox"].visually-hidden {
   }
   .advantages__description1-text1 {
     display: block;
-    width: 213px;
+    width: 215px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -1059,9 +1059,6 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     margin-right: 15px;
     padding: 0;
-  }
-  .advantages__description1-text1 {
-    width: 215px;
   }
 }
 .reasons {
@@ -3053,8 +3050,8 @@ footer {
   line-height: 26px;
   text-align: left;
   color: #000000;
-  background-color: #f2f2f2;
   border: none;
+  background-color: #f2f2f2;
 }
 .contacts--tube::before {
   content: "";
