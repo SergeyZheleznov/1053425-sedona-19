@@ -1,44 +1,33 @@
-.text1 {
-  display: block;
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.text2 {
-  display: inline-block;
+.social-button path {
+  fill: #5c6870;
 }
 
-.text3 {
-  display: inline-block;
+.social-button:hover path {
+  fill: #333333;
 }
 
-.text4 {
-  display: block;
+.social-button:active path,
+.social-button:focus path {
+  fill: #c2c2c2;
 }
 
-@media (min-width: @tablet-width) {
-  .test {
-    display: block;
-    width: 450px;
-  }
-
-  .text1 {
-    display: inline-block;
-    margin: 0;
-    margin-left: 40px;
-  }
-
-  .text2 {
-    display: inline-block;
-    margin: 0;
-    margin-right: 40px;
-  }
-
-  .text3 {
-    display: inline-block;
-    margin: 0;
-  }
-
-  .text4 {
-    display: inline-block;
-    margin: 0;
-  }
+/*
+.button:hover,
+.button:focus {
+  background-color: #e74246;
 }
+
+.button:active {
+  background-color:#d7373b;
+  box-shadow:inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+
+  color:rgba(255, 255, 255, 0.3);
+}
+*/

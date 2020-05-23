@@ -1,0 +1,30 @@
+.video {
+  position: relative;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video__picture {
+  width: 320px;
+  height: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    height: 570px;
+  }
+
+  .video__picture {
+    width: 648px;
+    height: 499px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__picture {
+    width: 800px;
+    height: 500px;
+  }
+}

@@ -1,4 +1,6 @@
 .discription {
+  margin-top: 5px;
+  font-weight: 700;
   border: none;
 }
 
@@ -12,11 +14,180 @@
 }
 
 .discription__text {
+  width: 250px;
+  padding: 28px 15px 20px 25px;
+}
+
+.discription__comment::placeholder {
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
   text-align: left;
-
   text-transform: none;
   color: #000000;
+}
+
+.discription__comment {
+  width: 250px;
+  border: none;
+}
+
+.dispription__label {
+  position: relative;
+}
+
+.discription--quadrate::before {
+  content: "";
+  position: absolute;
+  top: -115px;
+  left: -20px;
+  display: block;
+  z-index: 5;
+  width: 279px;
+  height: 160px;
+  background-color: rgba(1, 1, 1, 0.05);
+}
+
+@media (min-width: @tablet-width) {
+  .discription {
+    position: relative;
+    width: 764px;
+    padding: 42px 55px 20px 52px;
+  }
+
+  .discription__title {
+    width: 255px;
+    font-size: @large-font;
+    text-align: center;
+  }
+
+  .discription--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 60px;
+    width: 125px;
+    height: 1px;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+
+  .discription--borders::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 581px;
+    width: 125px;
+    height: 1px;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+
+  .discription__text {
+    position: relative;
+    width: 250px;
+    padding: 30px 15px 20px 25px;
+    font-size: @medium-font;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+    text-transform: none;
+    color: #000000;
+  }
+
+  .dispription__label {
+    position: relative;
+    color: #000000;
+  }
+
+  .discription--quadrate::before {
+    content: "";
+    position: absolute;
+    top: -145px;
+    left: -20px;
+    display: block;
+    z-index: 5;
+    width: 648px;
+    height: 160px;
+    background-color: rgba(1, 1, 1, 0.05);
+  }
+
+  .discription--quadrate::after {
+    content: "* — обязательные поля";
+    position: absolute;
+    top: 85px;
+    left: 470px;
+    display: block;
+    z-index: 5;
+    width: 400px;
+    height: 20px;
+    font-size: @little-font;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .discription__comment {
+    width: 606px;
+    height: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .discription {
+    position: relative;
+    width: 1196px;
+    margin-top: 0;
+    padding: 45px 55px 20px 112px;
+  }
+
+  .discription__title {
+    width: 255px;
+    margin-left: 1px;
+    text-align: center;
+  }
+
+  .discription--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 120px;
+    width: 274px;
+    height: 1px;
+  }
+
+  .discription--borders::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 800px;
+    width: 274px;
+    height: 1px;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+
+  .discription--quadrate::before {
+    content: "";
+    position: absolute;
+    width: 960px;
+  }
+
+  .discription--quadrate::after {
+    content: "* - обязательные поля";
+    position: absolute;
+    top: 85px;
+    left: 783px;
+  }
+
+  .discription__comment {
+    width: 906px;
+    height: 120px;
+  }
+
+  .discription__text {
+    position: relative;
+    width: 900px;
+  }
 }

@@ -1,39 +1,208 @@
 .radio {
+  position: relative;
+  margin-top: 13px;
+  padding: 38px 25px 1px;
+  font-weight: 700;
   border: none;
 }
 
+.radio--borders::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 272px;
+  left: 1px;
+  z-index: 10;
+
+  width: 320px;
+  height: 1px;
+  background-color: rgba(1, 1, 1, 0.1);
+}
+
 .radio__title {
+  display: block;
+  width: 236px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #000000;
 }
 
-.radio__one {
+.radio__label {
+  position: relative;
+  display: block;
+  margin-bottom: 21px;
+  padding-left: 73px;
   font-size: @medium-font;
-  font-weight: 700;
+  font-weight: 700px;
   line-height: 26px;
   text-align: left;
-  text-transform: none;
   color: #000000;
 }
 
-.radio__two {
-  font-size: @medium-font;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: #000000;
+.radio--circle::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
 }
 
-.radio__three {
-  font-size: @medium-font;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: #000000;
+.radio--circle:hover::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.radio--circle:focus::before,
+.radio--circle:active::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -5px;
+  display: block;
+  z-index: 10;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #d5d5d5;
+}
+
+/* когда у нашего радио-инпута состояние чект, то есть стоит кружок,
+то у нас должен бы на нём псевдоэлемента афтер*/
+
+.radio__input:checked + .radio--circle::after {
+  content: "";
+  position: relative;
+  top: -23px;
+  left: -62px;
+  display: block;
+  z-index: 10;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.radio__input:checked + .radio--circle:focus::after,
+.radio__input:checked + .radio--circle:active::after {
+  content: "";
+  position: relative;
+  top: -23px;
+  left: -62px;
+  display: block;
+  z-index: 10;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.radio__wrap {
+  display: block;
+  height: 69px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio {
+    width: 380px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .radio__title {
+    width: 275px;
+    margin: 0;
+    margin-left: 31px;
+    font-size: @large-font;
+    text-align: left;
+  }
+
+  .radio__label {
+    margin: 0;
+    padding-left: 106px;
+  }
+
+  .radio--circle::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 33px;
+  }
+
+  .radio--circle:hover::before {
+    content: "";
+    left: 33px;
+  }
+
+  .radio__input:checked + .radio--circle::after {
+    content: "";
+    position: relative;
+    top: -22px;
+    left: -56px;
+  }
+
+  .radio__input:checked + .radio--circle:focus::after,
+  .radio__input:checked + .radio--circle:active::after {
+    content: "";
+    left: -56px;
+  }
+
+  .radio__wrap {
+    display: block;
+    margin-top: 34px;
+    margin-left: 1px;
+    height: 44px;
+  }
+
+  .radio--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 381px;
+    z-index: 10;
+
+    width: 1px;
+    height: 292px;
+    background-color: rgba(1, 1, 1, 0.1);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio {
+    width: 592px;
+    margin-top: 25px;
+    padding: 38px 1px 4px 90px;
+  }
+
+  .radio__title {
+    margin-left: 107px;
+  }
+
+  .radio--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 599px;
+  }
 }

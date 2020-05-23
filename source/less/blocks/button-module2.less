@@ -1,0 +1,32 @@
+.button-module2 {
+  display: block;
+  margin: auto;
+  width: 280px;
+  height: 58px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @blue;
+  border: none;
+}
+
+.button-module1:hover {
+  background-color: @dark-blue;
+}
+
+.button-module1:focus {
+  background-color: @very-dark-blue;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .button-module2 {
+    width: 458px;
+    font-size: 21px;
+  }
+}

@@ -7,10 +7,13 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="body">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <div class="container">
 
@@ -27,7 +30,7 @@
               <li class="site-list__item site-list__item2"><a href="photo.html">Фото и видео</a></li>
               <li class="site-list__item site-list__item3"><a href="form.html">Форма отзыва</a></li>
               <li class="site-list__item site-list__item4 site-list__item--strips">
-                <a href="#">HTML ACADEMY</a>
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
               </li>
               <li class="site-list__item site-list__item5 site-list__item-down">
                 <a href="index.html">
@@ -54,8 +57,8 @@
             <div class="reasons__index1 reasons--sedona">
               <img class="reasons__index" src="img/text-sedona-index.svg" width="281" height="214" alt="sedona">
             </div>
-            <p class="reasons__number-zero">Седона – небольшой <br> городок в Аризоне, <br> заслуживающий большего!</p>
-            <p class="reasons__number-one">Рассмотрим 5 причин, по которым <br> Седона круче, чем Гранд Каньон!</p>
+            <p class="reasons__number-zero">Седона – небольшой городок в Аризоне, заслуживающий&nbsp;большего!</p>
+            <p class="reasons__number-one">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
 
           <ol class="reasons-list">
@@ -64,7 +67,7 @@
                 <div class="realtown__wrap realtown__wrap--triangle">
                   <h3 class="realtown__title">Настоящий городок</h3>
                   <span class="realtown__number">– №1 –</span>
-                  <p class="realtown__recomendation">Седона не аттрацион для туристов, <br> там течёт своя жизнь</p>
+                  <p class="realtown__recomendation">Седона не аттрацион для&nbsp;туристов, там течёт&nbsp;своя&nbsp;жизнь</p>
                 </div>
                 <span class="realtown__picture">
                   <picture>
@@ -76,20 +79,17 @@
                 <ul class="advantages">
                   <li class="advantages__home advantages__home--home">
                     <b class="advantages__title">Жильe</b>
-                    <p class="advantages__description">Рекомендуем пожить в <br> настоящем мотеле, все как в <br>кино!</p>
+                    <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все&nbsp;как&nbsp;в кино!</p>
                   </li>
                   <li class="advantages__souvenires advantages__souvenires--souvenires">
                     <b class="advantages__title">Сувениры</b>
                     <div class="advantages__description1">
-                      <p class="advantages__description1-text1">Не только китайского,</p>
-                      <p class="advantages__description1-text2">но и </p>
-                      <p class="advantages__description1-text3">местного </p>
-                      <p class="advantages__description1-text4">производства</p>
+                      <p class="advantages__description1-text1">Не&nbsp;только&nbsp;китайского, но&nbsp;и местного производства</p>
                     </div>
                   </li>
                   <li class="advantages__meal advantages__meal--meal">
                     <b class="advantages__title">Еда</b>
-                    <p class="advantages__description">Всегда заказывайте <br>фирменный бургер, вы не <br>разочаруетесь</p>
+                    <p class="advantages__description">Всегда заказывайте фирменный&nbsp;бургер, вы&nbsp;не разочаруетесь!</p>
                   </li>
                 </ul>
               </div>
@@ -98,11 +98,10 @@
             <li class="bridge">
               <div class="bridge__wrap">
                 <div class="bridge__title">
-                  <p class="bridge__text1">Там есть</p>
-                  <p class="bridge__text2"> мост дьявола</p>
+                  <p class="bridge__text">Там&nbsp;есть мост&nbsp;дьявола</p>
                 </div>
                 <span class="bridge__number">– №2 –</span>
-                <p class="bridge__recomendation">Да, по нему можно пройти! Если вы <br>осмелитесь, конечно</p>
+                <p class="bridge__recomendation">Да, по нему можно пройти! Если вы <br>осмелитесь,&nbsp;конечно</p>
               </div>
               <span class="bridge__picture">
                 <picture>
@@ -142,10 +141,7 @@
           <div class="question__wrap">
             <h2 class="question__text">Заинтересовались?</h2>
             <div class="question__content">
-              <p class="question__content-text1">Укажите предполагаемые даты </p>
-              <p class="question__content-text2">поездки, </p>
-              <p class="question__content-text3">и мы покажем вам лучшие </p>
-              <p class="question__content-text4">предложения гостиниц в Седоне</p>
+              <p class="question__content-text1">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
             </div>
           </div>
           <a class="question__search button" href="#">Найти гостиницу</a>
@@ -155,6 +151,9 @@
           <h2 class="visually-hidden">Часть страницы с картой</h2>
           <div class="map__position">
             <img class="map__marker" src="img/icon-map-marker.svg" width="25" height="25" alt="map-marker">
+            <div class="map__interactive">
+              <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A81896f5ce68ab0d11cdbc648b9c90d494159e1cc9df6f370e962e25dee661975&amp;width=auto&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
           </div>
         </section>
 
@@ -184,7 +183,5 @@
 
       </footer>
     </div>
-
-
   </body>
 </html>
