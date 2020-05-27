@@ -19,20 +19,22 @@
 
       <header class="page-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav"> <!-- модификатор site-list--switch обеспечивает закрытие и открытие меню
+                                    main-nav__button--switch отвечает за состояние кнопки
+                                    модификаторы от site-list__item1--switch до site-list__item5--switch обеспечивают состояние других элементов-->
 
           <div class="main-nav__wrapper">
-            <button class="main-nav__button" type="button"><span class="visually-hidden">Кнопка меню</span></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item1 site-list__item--active">
+            <button class="main-nav__button main-nav__button--switch" type="button"><span class="visually-hidden">Кнопка меню</span></button>
+            <ul class="main-nav__list site-list site__list--switch">
+              <li class="site-list__item site-list__item1 site-list__item1--switch site-list__item--active">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="site-list__item site-list__item2"><a href="photo.html">Фото и видео</a></li>
-              <li class="site-list__item site-list__item3"><a href="form.html">Форма отзыва</a></li>
-              <li class="site-list__item site-list__item4 site-list__item--strips">
+              <li class="site-list__item site-list__item2 site-list__item2--switch"><a href="photo.html">Фото и видео</a></li>
+              <li class="site-list__item site-list__item3 site-list__item3--switch"><a href="form.html">Форма отзыва</a></li>
+              <li class="site-list__item site-list__item4 site-list__item4--switch site-list__item--strips">
                 <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
               </li>
-              <li class="site-list__item site-list__item5 site-list__item-down">
+              <li class="site-list__item site-list__item5 site-list__item-down site-list__item5--switch">
                 <a href="index.html">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -54,7 +56,7 @@
 
           <h2 class="visually-hidden">Причины для посещения городка Седона</h2>
           <div class="reasons__position">
-            <div class="reasons__index1 reasons--sedona">
+            <div class="reasons__index1 reasons__index1--sedona">
               <img class="reasons__index" src="img/text-sedona-index.svg" width="281" height="214" alt="sedona">
             </div>
             <p class="reasons__number-zero">Седона – небольшой городок в Аризоне, заслуживающий&nbsp;большего!</p>
@@ -128,7 +130,7 @@
             </li>
 
             <li class="tourists places">
-              <div class="places__wrap">
+              <div class="places__wrap places__tour">
                 <h3 class="places__title">Мало туристов</h3>
                 <span class="places__number">– №5 –</span>
                 <p class="places__recomendation">Большинство едет в Гранд Каньон и толпится там</p>
@@ -176,9 +178,9 @@
           </ul>
         </div>
 
-        <div class="footer__copyright copyright">
+        <div class="footer__copyright copyright copyright--htmlacademy">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
 
       </footer>

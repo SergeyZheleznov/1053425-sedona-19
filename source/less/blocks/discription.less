@@ -1,11 +1,18 @@
 .discription {
-  margin-top: 5px;
+  position: relative;
+  width: auto;
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
   font-weight: 700;
   border: none;
 }
 
 .discription__title {
   font-size: @medium-font;
+  width: 318px;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
@@ -14,8 +21,16 @@
 }
 
 .discription__text {
+  position: relative;
   width: 250px;
-  padding: 28px 15px 20px 25px;
+  min-height: 167px;
+  padding: 33px 15px 20px 38px;
+  font-size: @medium-font;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-transform: none;
+  color: #000000;
 }
 
 .discription__comment::placeholder {
@@ -32,15 +47,15 @@
   border: none;
 }
 
-.dispription__label {
+.discription__label {
   position: relative;
 }
 
-.discription--quadrate::before {
+.discription__text--quadrate::before {
   content: "";
   position: absolute;
-  top: -115px;
-  left: -20px;
+  top: 18px;
+  left: 20px;
   display: block;
   z-index: 5;
   width: 279px;
@@ -51,32 +66,41 @@
 @media (min-width: @tablet-width) {
   .discription {
     position: relative;
-    width: 764px;
-    padding: 42px 55px 20px 52px;
+    order: 5;
+    width: 766px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
   }
 
   .discription__title {
-    width: 255px;
+    width: 766px;
+    margin: 0;
+    padding: 0;
     font-size: @large-font;
     text-align: center;
   }
 
-  .discription--borders::before {
+  .discription__wrap-wrap {
+    position: relative;
+  }
+
+  .discription__wrap-wrap--borders::before {
     content: "";
     position: absolute;
     display: block;
-    top: 13px;
+    top: -13px;
     left: 60px;
     width: 125px;
     height: 1px;
     background-color: rgba(1, 1, 1, 0.1);
   }
 
-  .discription--borders::after {
+  .discription__wrap-wrap--borders::after {
     content: "";
     position: absolute;
     display: block;
-    top: 13px;
+    top: -13px;
     left: 581px;
     width: 125px;
     height: 1px;
@@ -85,8 +109,8 @@
 
   .discription__text {
     position: relative;
-    width: 250px;
-    padding: 30px 15px 20px 25px;
+    width: 645px;
+    padding: 73px 15px 20px 81px;
     font-size: @medium-font;
     font-weight: 700;
     line-height: 35px;
@@ -95,16 +119,15 @@
     color: #000000;
   }
 
-  .dispription__label {
-    position: relative;
+  .discription__label {
     color: #000000;
   }
 
-  .discription--quadrate::before {
+  .discription__text--quadrate::before {
     content: "";
     position: absolute;
-    top: -145px;
-    left: -20px;
+    top: 57px;
+    left: 60px;
     display: block;
     z-index: 5;
     width: 648px;
@@ -112,14 +135,14 @@
     background-color: rgba(1, 1, 1, 0.05);
   }
 
-  .discription--quadrate::after {
-    content: "* — обязательные поля";
+  .discription__text--quadrate::after {
+    content: "* – обязательные поля";
     position: absolute;
-    top: 85px;
-    left: 470px;
+    top: 290px;
+    left: 548px;
     display: block;
     z-index: 5;
-    width: 400px;
+    width: 167px;
     height: 20px;
     font-size: @little-font;
     font-weight: 400;
@@ -137,57 +160,61 @@
   .discription {
     position: relative;
     width: 1196px;
-    margin-top: 0;
-    padding: 45px 55px 20px 112px;
+    margin-top: 2px;
   }
 
   .discription__title {
-    width: 255px;
-    margin-left: 1px;
+    width: 1197px;
+    padding-left: 1px;
     text-align: center;
   }
 
-  .discription--borders::before {
+  .discription__wrap-wrap {
+    position: relative;
+    padding: 1px 55px 20px 58px;
+  }
+
+  .discription__wrap-wrap--borders::before {
     content: "";
     position: absolute;
     display: block;
-    top: 12px;
+    top: -12px;
     left: 120px;
     width: 274px;
     height: 1px;
   }
 
-  .discription--borders::after {
+  .discription__wrap-wrap--borders::after {
     content: "";
     position: absolute;
     display: block;
-    top: 12px;
+    top: -12px;
     left: 800px;
     width: 274px;
     height: 1px;
     background-color: rgba(1, 1, 1, 0.1);
   }
 
-  .discription--quadrate::before {
+  .discription__text {
+    position: relative;
+    width: auto;
+  }
+
+  .discription__text--quadrate::before {
     content: "";
     position: absolute;
     width: 960px;
   }
 
-  .discription--quadrate::after {
-    content: "* - обязательные поля";
+  .discription__text--quadrate::after {
+    content: "* – обязательные поля";
     position: absolute;
-    top: 85px;
-    left: 783px;
+    top: 289px;
+    left: 860px;
   }
 
   .discription__comment {
     width: 906px;
     height: 120px;
-  }
-
-  .discription__text {
-    position: relative;
-    width: 900px;
   }
 }

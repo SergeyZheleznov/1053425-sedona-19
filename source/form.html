@@ -18,20 +18,22 @@
     <div class="container">
       <header class="page-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav">  <!-- модификатор site-list--switch обеспечивает закрытие и открытие меню
+          main-nav__button--switch отвечает за состояние кнопки
+          модификаторы от site-list__item1--switch до site-list__item5--switch обеспечивают состояние других элементов-->
 
           <div class="main-nav__wrapper">
-            <button class="main-nav__button" type="button"><span class="visually-hidden">Кнопка меню</span></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item1">
+            <button class="main-nav__button main-nav__button--switch" type="button"><span class="visually-hidden">Кнопка меню</span></button>
+            <ul class="main-nav__list site-list site-list--switch">
+              <li class="site-list__item site-list__item1 site-list__item1--switch">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="site-list__item site-list__item2"><a href="photo.html">Фото и видео</a></li>
-              <li class="site-list__item site-list__item3 site-list__item--active"><a href="form.html">Форма отзыва</a></li>
-              <li class="site-list__item site-list__item4 site-list__item--strips">
+              <li class="site-list__item site-list__item2 site-list__item2--switch"><a href="photo.html">Фото и видео</a></li>
+              <li class="site-list__item site-list__item3 site-list__item--active site-list__item3--switch"><a href="form.html">Форма отзыва</a></li>
+              <li class="site-list__item site-list__item4 site-list__item--strips site-list__item4--switch">
                 <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
               </li>
-              <li class="site-list__item site-list__item5 site-list__item-down">
+              <li class="site-list__item site-list__item5 site-list__item-down site-list__item5--switch">
                 <a href="index.html">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -53,86 +55,92 @@
         <section class="form-section">
 
           <div class="form-head">
-            <div class="form-head__position form-head--sedona back-sedona"><img class="form-head__picture" src="img/text-sedona.svg" width="320" height="158" alt="sedona"></div>
+            <div class="form-head__position form-head__position--sedona back-sedona"><img class="form-head__picture" src="img/text-sedona.svg" width="320" height="158" alt="sedona"></div>
             <h2 class="form-head__title">Оставьте свой отзыв</h2>
             <p class="form-head__text">Помогите нашим отелям стать лучше! Оставьте&nbsp;отзыв&nbsp;о&nbsp;них, а&nbsp;так&nbsp;же&nbsp;о посещенных&nbsp;вами <br>достопримечательностях</p>
           </div>
 
           <form class="form-content" action="https://echo.htmlacademy.ru" method="POST">
 
-            <fieldset class="customer">
+            <fieldset class="customer customer__borders">
               <legend class="customer__title">Представьтесь:</legend>
-              <div class="customer__name">
-                <label class="customer__name-letter" for="customer-name-id">Имя<sup>*</sup>:</label>
-                <input class="customer__name-holder" type="text" name="customer-name" id="customer-name-id" placeholder="Петр" required="">
-              </div>
-              <div class="customer__surname">
-                <label class="customer__surname-letter" for="customer-surname-id">Фамилия<sup>*</sup>:</label>
-                <input class="customer__surname-holder" type="text" name="customer-surname" id="customer-surname-id" placeholder="Иванов" required="">
-              </div>
-              <div class="customer__patronymic">
-                <label class="customer__patronymic-letter" for="customer-patronymic-id">Отчество:</label>
-                <input class="customer__patronymic-holder" type="text" name="customer-patronymic" id="customer-patronymic-id" placeholder="Александрович">
+              <div class="customer__wrap-wrap">
+                <div class="customer__name">
+                  <label class="customer__name-letter" for="customer-name-id">Имя<sup>*</sup>:</label>
+                  <input class="customer__name-holder" type="text" name="customer-name" id="customer-name-id" placeholder="Петр" required="">
+                </div>
+                <div class="customer__surname">
+                  <label class="customer__surname-letter" for="customer-surname-id">Фамилия<sup>*</sup>:</label>
+                  <input class="customer__surname-holder" type="text" name="customer-surname" id="customer-surname-id" placeholder="Иванов" required="">
+                </div>
+                <div class="customer__patronymic">
+                  <label class="customer__patronymic-letter" for="customer-patronymic-id">Отчество:</label>
+                  <input class="customer__patronymic-holder" type="text" name="customer-patronymic" id="customer-patronymic-id" placeholder="Александрович">
+                </div>
               </div>
             </fieldset>
 
-            <fieldset class="contacts contacts--borders">
+            <fieldset class="contacts">
               <legend class="contacts__title">Контактная информация:</legend>
-              <div class="contacts__wrap">
+              <div class="contacts__wrap-wrap contacts__wrap-wrap--borders">
                 <div class="contacts__tel">
-                  <label class="contacts__tel-text contacts--tube" for="telephone"><span class="contacts__tel1">Контактный</span><span class="contacts__tel2"> телефон<sup>*</sup>:</span></label>
+                  <label class="contacts__tel-text contacts__tel-text--tube" for="telephone"><span class="contacts__tel1">Контактный</span><span class="contacts__tel2"> телефон<sup>*</sup>:</span></label>
                   <input class="contacts__tel-input" type="tel" name="tel" id="telephone" value="Введите телефон" required="">
                 </div>
                 <div class="contacts__email">
-                  <label class="contacts__email-text contacts--envelope" for="e-mail">Электронная почта<sup>*</sup>:</label>
+                  <label class="contacts__email-text contacts__email-text--envelope" for="e-mail">Электронная почта<sup>*</sup>:</label>
                   <input class="contacts__email-input" type="email" name="email" id="e-mail" value="Введите e-mail" required="">
                 </div>
               </div>
             </fieldset>
 
-            <fieldset class="radio radio--borders">
+            <fieldset class="radio">
               <legend class="radio__title">Ваше общее впечатление:</legend>
-              <div class="radio__wrap">
-                <input class="radio__input visually-hidden" type="radio" name="opinion" id="form-one" checked="">
-                <label class="radio__label radio--circle" for="form-one">Скорее положительное</label>
-              </div>
-              <div class="radio__wrap">
-                <input class="radio__input visually-hidden" type="radio" name="opinion" id="form-two">
-                <label class="radio__label radio--circle" for="form-two">Скорее отрицательное</label>
-              </div>
-              <div class="radio__wrap">
-                <input class="radio__input visually-hidden" type="radio" name="opinion" id="form-three">
-                <label class="radio__label radio--circle" for="form-three">Затрудняюсь ответить</label>
+              <div class="radio__wrap-wrap radio__wrap-wrap--borders">
+                <div class="radio__wrap">
+                  <input class="radio__input visually-hidden" type="radio" name="opinion" value="plus" id="form-one" checked="">
+                  <label class="radio__label radio__label--circle" for="form-one">Скорее положительное</label>
+                </div>
+                <div class="radio__wrap">
+                  <input class="radio__input visually-hidden" type="radio" name="opinion" value="minus" id="form-two">
+                  <label class="radio__label radio__label--circle" for="form-two">Скорее отрицательное</label>
+                </div>
+                <div class="radio__wrap">
+                  <input class="radio__input visually-hidden" type="radio" name="opinion" value="so-so" id="form-three">
+                  <label class="radio__label radio__label--circle" for="form-three">Затрудняюсь ответить</label>
+                </div>
               </div>
             </fieldset>
 
-            <fieldset class="checkbox checkbox--borders">
+            <fieldset class="checkbox">
               <legend class="checkbox__title">Посещенные<br> достопримечательности:</legend>
-              <div class="checkbox__wrap-wrap">
+              <div class="checkbox__wrap-wrap checkbox__wrap-wrap--borders">
                 <div class="checkbox__wrap">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="one" checked="">
-                  <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="one">Мост Дьявола</label>
+                  <label class="checkbox__label checkbox__label--quadrate checkbox__label1 checkbox__label1--quadrate1" for="one">Мост Дьявола</label>
                 </div>
                 <div class="checkbox__wrap">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="check-two" id="two" checked="">
-                  <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="two">Гора-Колокол</label>
+                  <label class="checkbox__label checkbox__label--quadrate checkbox__label2 checkbox__label2--quadrate2" for="two">Гора-Колокол</label>
                 </div>
                 <div class="checkbox__wrap">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="check-three" id="three" checked="">
-                  <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="three">Слайд-парк</label>
+                  <label class="checkbox__label checkbox__label--quadrate checkbox__label3 checkbox__label3--quadrate3" for="three">Слайд-парк</label>
                 </div>
-                <div class="checkbox__wrap">
+                <div class="checkbox__wrap4">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="chech-four" id="four">
-                  <label class="checkbox__label checkbox--quadrate checkbox__label4 checkbox--quadrate4" for="four">Красные скалы</label>
+                  <label class="checkbox__label checkbox__label--quadrate checkbox__label4 checkbox__label4--quadrate4" for="four">Красные скалы</label>
                 </div>
               </div>
             </fieldset>
 
-            <fieldset class="discription discription--borders">
+            <fieldset class="discription">
               <legend class="discription__title">Опишите свои эмоции:</legend>
-              <div class="discription__text">
-                <textarea class="discription__comment" name="comment" id="comment-field" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
-                <label class="dispription__label discription--quadrate" for="comment-field"></label>
+              <div class="discription__wrap-wrap discription__wrap-wrap--borders">
+                <div class="discription__text discription__text--quadrate">
+                  <textarea class="discription__comment" name="comment" id="comment-field" rows="5" cols="20" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <label class="discription__label" for="comment-field"></label>
+                </div>
               </div>
             </fieldset>
 
@@ -162,9 +170,9 @@
           </ul>
         </div>
 
-        <div class="footer__copyright copyright">
+        <div class="footer__copyright copyright copyright--htmlacademy">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
 
       </footer>

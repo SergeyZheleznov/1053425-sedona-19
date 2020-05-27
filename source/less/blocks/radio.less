@@ -1,34 +1,28 @@
 .radio {
   position: relative;
-  margin-top: 13px;
-  padding: 38px 25px 1px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
   font-weight: 700;
   border: none;
 }
 
-.radio--borders::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 272px;
-  left: 1px;
-  z-index: 10;
-
-  width: 320px;
-  height: 1px;
-  background-color: rgba(1, 1, 1, 0.1);
+.radio__wrap-wrap {
+  margin: 0;
+  padding: 37px 20px 0 25px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.1);
 }
 
 .radio__title {
   display: block;
-  width: 236px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 13px;
+  width: 318px;
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -45,11 +39,11 @@
   color: #000000;
 }
 
-.radio--circle::before {
+.radio__label--circle::before {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -5px;
+  top: -15px;
+  left: -6.3px;
   display: block;
   z-index: 10;
   width: 55px;
@@ -58,11 +52,11 @@
   background-color: #f2f2f2;
 }
 
-.radio--circle:hover::before {
+.radio__label--circle:hover::before {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -5px;
+  top: -15px;
+  left: -6.3px;
   display: block;
   z-index: 10;
   width: 55px;
@@ -71,12 +65,12 @@
   background-color: #e5e5e5;
 }
 
-.radio--circle:focus::before,
-.radio--circle:active::before {
+.radio__label--circle:focus::before,
+.radio__label--circle:active::before {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -5px;
+  top: -15px;
+  left: -6.3px;
   display: block;
   z-index: 10;
   width: 55px;
@@ -88,10 +82,10 @@
 /* когда у нашего радио-инпута состояние чект, то есть стоит кружок,
 то у нас должен бы на нём псевдоэлемента афтер*/
 
-.radio__input:checked + .radio--circle::after {
+.radio__input:checked + .radio__label--circle::after {
   content: "";
   position: relative;
-  top: -23px;
+  top: -24px;
   left: -62px;
   display: block;
   z-index: 10;
@@ -101,11 +95,11 @@
   background-color: rgba(0, 0, 0, 1);
 }
 
-.radio__input:checked + .radio--circle:focus::after,
-.radio__input:checked + .radio--circle:active::after {
+.radio__input:checked + .radio__label--circle:focus::after,
+.radio__input:checked + .radio__label--circle:active::after {
   content: "";
   position: relative;
-  top: -23px;
+  top: -24px;
   left: -62px;
   display: block;
   z-index: 10;
@@ -122,87 +116,116 @@
 
 @media (min-width: @tablet-width) {
   .radio {
-    width: 380px;
+    order: 1;
+    width: 383px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
     margin-top: 30px;
-    margin-left: 0;
-    margin-right: 0;
+    border: none;
+  }
+
+  .radio__wrap-wrap {
+    position: relative;
+    margin: 0;
+    padding: 37px 20px 0 125px;
+    border: none;
+  }
+
+  .radio__wrap-wrap--borders::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -20px;
+    left: 383px;
+    width: 1px;
+    height: 292px;
+    border-left: 1px solid rgba(1, 1, 1, 0.1);
   }
 
   .radio__title {
-    width: 275px;
+    width: 382.5px;
     margin: 0;
-    margin-left: 31px;
+    padding: 0;
+    padding-left: 5px;
     font-size: @large-font;
-    text-align: left;
+    text-align: center;
   }
 
   .radio__label {
     margin: 0;
-    padding-left: 106px;
+    padding: 0;
   }
 
-  .radio--circle::before {
+  .radio__label--circle::before {
     content: "";
     position: absolute;
     top: -13px;
-    left: 33px;
+    left: -75px;
   }
 
-  .radio--circle:hover::before {
+  .radio__label--circle:hover::before {
     content: "";
-    left: 33px;
+    position: absolute;
+    top: -13px;
+    left: -75px;
   }
 
-  .radio__input:checked + .radio--circle::after {
+  .radio__input:checked + .radio__label--circle::after {
     content: "";
     position: relative;
-    top: -22px;
-    left: -56px;
+    top: -21px;
+    left: -59px;
   }
 
-  .radio__input:checked + .radio--circle:focus::after,
-  .radio__input:checked + .radio--circle:active::after {
+  .radio__input:checked + .radio__label--circle:focus::after,
+  .radio__input:checked + .radio__label--circle:active::after {
     content: "";
-    left: -56px;
+    position: relative;
+    top: -21px;
+    left: -59px;
   }
 
   .radio__wrap {
     display: block;
     margin-top: 34px;
-    margin-left: 1px;
+    padding-left: 10px;
     height: 44px;
-  }
-
-  .radio--borders::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 6px;
-    left: 381px;
-    z-index: 10;
-
-    width: 1px;
-    height: 292px;
-    background-color: rgba(1, 1, 1, 0.1);
   }
 }
 
 @media (min-width: @desktop-width) {
   .radio {
-    width: 592px;
+    width: 598px;
     margin-top: 25px;
-    padding: 38px 1px 4px 90px;
   }
 
   .radio__title {
-    margin-left: 107px;
+    width: 598px;
+    margin: 0;
+    padding: 0;
+    padding-left: 67px;
   }
 
-  .radio--borders::before {
+  .radio__wrap-wrap {
+    display: block;
+    width: auto;
+    padding: 37px 20px 0 187px;
+  }
+
+  .radio__wrap {
+    display: block;
+    width: auto;
+  }
+
+  .radio__wrap-wrap--borders::before {
     content: "";
     position: absolute;
     display: block;
-    top: 6px;
-    left: 599px;
+    top: -20px;
+    left: 600px;
+    width: 1px;
+    height: 292px;
+    border-left: 1px solid rgba(1, 1, 1, 0.1);
   }
 }

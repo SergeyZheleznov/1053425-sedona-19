@@ -1,32 +1,25 @@
 .checkbox {
   position: relative;
-  margin-top: 17px;
-  padding: 32px 25px 1px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
   font-weight: 700;
   border: none;
 }
 
 .checkbox__wrap-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.checkbox--borders::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 390px;
-  left: 1px;
-  z-index: 10;
-
-  width: 320px;
-  height: 1px;
-  background-color: rgba(1, 1, 1, 0.1);
+  width: auto;
+  margin: 0;
+  padding: 32px 20px 0 26px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.1);
 }
 
 .checkbox__title {
-  margin-top: 17px;
+  width: 318px;
+  margin: 0;
   font-size: @medium-font;
   font-weight: 700;
   line-height: 26px;
@@ -52,7 +45,13 @@
   color: #000000;
 }
 
-.checkbox--quadrate::before {
+.checkbox__wrap4 {
+  display: block;
+  height: 72px;
+  margin: 0;
+}
+
+.checkbox__label--quadrate::before {
   content: "";
   position: absolute;
   top: -13px;
@@ -65,7 +64,7 @@
   border-radius: 4px;
 }
 
-.checkbox--quadrate:hover::before {
+.checkbox__label--quadrate:hover::before {
   content: "";
   position: absolute;
   top: -13px;
@@ -78,8 +77,8 @@
   border-radius: 4px;
 }
 
-.checkbox--quadrate:focus::before,
-.checkbox--quadrate:active::before {
+.checkbox__label--quadrate:focus::before,
+.checkbox__label--quadrate:active::before {
   content: "";
   position: absolute;
   top: -13px;
@@ -95,7 +94,7 @@
 /* когда у нашего инпута состояние чект, то есть стоит галочка,
 то у нас должна быть картинка с галочкой */
 
-.checkbox__input:checked + .checkbox--quadrate::after {
+.checkbox__input:checked + .checkbox__label--quadrate::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -109,8 +108,8 @@
   background-image: url("../img/icon-tick.svg");
 }
 
-.checkbox__input:checked + .checkbox--quadrate:focus::after,
-.checkbox__input:checked + .checkbox--quadrate:active::after {
+.checkbox__input:checked + .checkbox__label--quadrate:focus::after,
+.checkbox__input:checked + .checkbox__label--quadrate:active::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -127,40 +126,47 @@
 
 @media (min-width: @tablet-width) {
   .checkbox {
-    margin-top: 47px;
+    order: 4;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
   }
 
   .checkbox__wrap-wrap {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 764px;
-    padding: 25px 1px 20px 135px;
+    padding: 55px 1px 1px 162px;
+    border: none;
   }
 
   .checkbox__title {
-    width: 280px;
-    padding-right: 52px;
+    width: 766px;
+    margin: 0;
+    padding: 0;
     font-size: @large-font;
     text-align: center;
   }
 
-  .checkbox--borders::before {
+  .checkbox__wrap-wrap--borders::before {
     content: "";
     position: absolute;
     display: block;
-    top: 26px;
+    top: -26px;
     left: 60px;
     width: 125px;
     height: 1px;
+    background-color: rgba(1, 1, 1, 0.1);
   }
 
-  .checkbox--borders::after {
+  .checkbox__wrap-wrap::after {
     content: "";
     position: absolute;
     display: block;
-    top: 26px;
+    top: -26px;
     left: 581px;
     width: 125px;
     height: 1px;
@@ -192,42 +198,43 @@
 @media (min-width: @desktop-width) {
   .checkbox {
     width: auto;
-    padding-left: 1px;
-    padding-right: 1px;
     margin-top: 39px;
   }
 
   .checkbox__title {
-    padding-left: 44px;
+    width: 1197px;
+    padding-left: 3px;
     text-align: center;
   }
 
-  .checkbox--borders::before {
+  .checkbox__wrap-wrap {
+    position: relative;
+    justify-content: flex-start;
+    width: 1198px;
+    padding: 58px 1px 20px 125px;
+  }
+
+  .checkbox__wrap-wrap--borders::before {
     content: "";
     position: absolute;
     display: block;
-    top: 24px;
+    top: -24px;
     left: 120px;
-    width: 274px;
+    width: 276px;
     height: 1px;
   }
 
-  .checkbox--borders::after {
+  .checkbox__wrap-wrap--borders::after {
     content: "";
     position: absolute;
     display: block;
-    top: 24px;
+    top: -24px;
     left: 800px;
-    width: 274px;
+    width: 276px;
     height: 1px;
     background-color: rgba(1, 1, 1, 0.1);
   }
 
-  .checkbox__wrap-wrap {
-    justify-content: flex-start;
-    width: 1198px;
-    padding: 25px 1px 20px 125px;
-  }
 
   .checkbox__wrap {
     display: block;
@@ -267,69 +274,69 @@
     padding-left: 97px;
   }
 
-  .checkbox--quadrate2:hover::before {
+  .checkbox__label2--quadrate2:hover::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 15px;
   }
 
-  .checkbox--quadrate2:focus::before,
-  .checkbox--quadrate2:active::before {
+  .checkbox__label2--quadrate2:focus::before,
+  .checkbox__label2--quadrate2:active::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 15px;
   }
 
-  .checkbox__input:checked + .checkbox--quadrate2:focus::after,
-  .checkbox__input:checked + .checkbox--quadrate2:active::after {
+  .checkbox__input:checked + .checkbox__label2--quadrate2:focus::after,
+  .checkbox__input:checked + .checkbox__label2--quadrate2:active::after {
     content: "";
     position: absolute;
     top: 6px;
     left: 33px;
   }
 
-  .checkbox--quadrate3:hover::before {
+  .checkbox__label3--quadrate3:hover::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 37px;
   }
 
-  .checkbox--quadrate3:focus::before,
-  .checkbox--quadrate3:active::before {
+  .checkbox__label3--quadrate3:focus::before,
+  .checkbox__label3--quadrate3:active::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 37px;
   }
 
-  .checkbox__input:checked + .checkbox--quadrate3:focus::after,
-  .checkbox__input:checked + .checkbox--quadrate3:active::after {
+  .checkbox__input:checked + .checkbox__label3--quadrate3:focus::after,
+  .checkbox__input:checked + .checkbox__label3--quadrate3:active::after {
     content: "";
     position: absolute;
     top: 6px;
     left: 55px;
   }
 
-  .checkbox--quadrate4:hover::before {
+  .checkbox__label4--quadrate4:hover::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 37px;
   }
 
-  .checkbox--quadrate4:focus::before,
-  .checkbox--quadrate4:active::before {
+  .checkbox__label4--quadrate4:focus::before,
+  .checkbox__label4--quadrate4:active::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 37px;
   }
 
-  .checkbox__input:checked + .checkbox--quadrate4:focus::after,
-  .checkbox__input:checked + .checkbox--quadrate4:active::after {
+  .checkbox__input:checked + .checkbox__label4--quadrate4:focus::after,
+  .checkbox__input:checked + .checkbox__label4--quadrate4:active::after {
     content: "";
     position: absolute;
     top: 6px;
@@ -352,7 +359,7 @@
     padding-left: 118px;
   }
 
-  .checkbox--quadrate2::before {
+  .checkbox__label2--quadrate2::before {
     content: "";
     position: absolute;
     top: -13px;
@@ -365,35 +372,35 @@
     border-radius: 4px;
   }
 
-  .checkbox__input:checked + .checkbox--quadrate2::after {
+  .checkbox__input:checked + .checkbox__label2--quadrate2::after {
     content: "";
     position: absolute;
     top: 6px;
     left: 32px;
   }
 
-  .checkbox--quadrate3::before {
+  .checkbox__label3--quadrate3::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 37px;
   }
 
-  .checkbox__input:checked + .checkbox--quadrate3::after {
+  .checkbox__input:checked + .checkbox__label3--quadrate3::after {
     content: "";
     position: absolute;
     top: 6px;
     left: 57px;
   }
 
-  .checkbox--quadrate4::before {
+  .checkbox__label4--quadrate4::before {
     content: "";
     position: absolute;
     top: -13px;
     left: 37px;
   }
 
-  .checkbox__input:checked + .checkbox--quadrate4::after {
+  .checkbox__input:checked + .checkbox__label4--quadrate4::after {
     content: "";
     position: absolute;
     top: 6px;
